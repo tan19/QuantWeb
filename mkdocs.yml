@@ -1,0 +1,31 @@
+site_name: A Stroll Through the Brambles of Quant Finance
+site_author: emc57721
+copyright: 'Copyright &copy; 2021 emc57721'  
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top    
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      linenums: true # add line numbers to code
+  - pymdownx.superfences # allows for the nesting of code and content blocks inside admonitions    
+  - pymdownx.snippets # allows to insert content from other files or other, regular content
+  - abbr
+  - admonition # aka call-outs, are an excellent choice for including side content without significantly interrupting the document flow. 
+  - pymdownx.details # make admonitions collapsible
+
+extra_javascript:
+  - javascripts/config.js  
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+  - javascripts/tables.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js  
