@@ -1,8 +1,5 @@
 # Homepage
 
-
-# Markdown Examples
-
 $$
 \bA
 $$
@@ -30,12 +27,7 @@ The `#!python range()` function is highlighted.
 
 !!! Question "Ex. 2.1"
 	Suppose each of $K$-classes has associated target $t_k$, which is a vector of all zeros, except a one in the $k$-th position. Show that classifying to the largest of $\hat y$ amounts to choosing the closet target, $\min_k\|t_k-\hat y\|$, if the elements of $\hat y$ sum to one.
-
-asdfasd
-asdfasd
-
-
-!!! done "Soln. 2.1" 
+???+ done "Soln. 2.1" 
 
 	We need to prove:
 
@@ -55,6 +47,23 @@ asdfasd
 
 
 	Given $\eqref{eq:2-1b}$, it's straightforward to see that $\eqref{eq:2-1a}$ indeed holds.
+
+    === "Python"
+    ``` python hl_lines="2 3"
+    def bubble_sort(items):
+        for i in range(len(items)):
+            for j in range(len(items) - 1 - i):
+                if items[j] > items[j + 1]:
+                    items[j], items[j + 1] = items[j + 1], items[j]
+    ```
+    === "C++"
+    ``` C++
+    void f() {
+
+    }
+    ```
+
+The `#!python range()` function is highlighted.
 
 
 !!! info inline

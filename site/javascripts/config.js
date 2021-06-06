@@ -26,6 +26,8 @@ window.MathJax = {
       bM: "\\textbf{M}",
       bS: "\\textbf{S}",
       rl: "\\rangle",
+      EEE: "\\mathbb{E}",
+      Var: "\\mbox{Var}",      
       bm: ["\\boldsymbol #1", 1]
     }
   },

@@ -1,4 +1,4 @@
-# Examples
+# LeetCode
 
 <a href="https://oi-wiki.org/" target="_blank">OI Wiki</a>
 
