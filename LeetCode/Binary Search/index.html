@@ -1887,7 +1887,9 @@
 <li>Space Complexity: <span class="arithmatex">\(O(1)\)</span></li>
 </ul>
 </div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Solution</label><div class="tabbed-content"></div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Solution</label><div class="tabbed-content">
+<p>Binary search for the <span class="arithmatex">\(\mbox{capacity} \in [max(weights), sum(weights)]\)</span>. For each of these <span class="arithmatex">\(O(\log n)\)</span> capacity, it costs <span class="arithmatex">\(O(n)\)</span> to check if the plan can be delivered. Total cost is thus <span class="arithmatex">\(O(n \log n)\)</span>.</p>
+</div>
 <input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Binary Search <span class="arithmatex">\(O(n\log(S))\)</span></label><div class="tabbed-content">
 <div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Python</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -1954,7 +1956,7 @@
 </ul>
 </div>
 <input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Solution</label><div class="tabbed-content">
-<p>Binary search to propose the furthest building you try to reach, which costs <span class="arithmatex">\(O(\log n)\)</span>. Within each proposal, it takes <span class="arithmatex">\(O(n)\)</span> to check if you are indeed able to finish. Total cost is then <span class="arithmatex">\(O(n \log n)\)</span>.</p>
+<p>Binary search to propose the furthest building you try to reach, which costs <span class="arithmatex">\(O(\log n)\)</span>. Within each proposal, it takes <span class="arithmatex">\(O(n)\)</span> to check if you are indeed able to finish. Total cost is thus <span class="arithmatex">\(O(n \log n)\)</span>.</p>
 </div>
 <input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">Binary Search <span class="arithmatex">\(O(n\log n)\)</span></label><div class="tabbed-content">
 <div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Python</label><div class="tabbed-content">
