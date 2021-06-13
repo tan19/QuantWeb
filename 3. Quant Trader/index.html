@@ -1734,31 +1734,39 @@
                 
                 <h1 id="introduction">Introduction</h1>
 <h2 id="option-pl-attributions">Option P&amp;L Attributions</h2>
-<p>Consider at time 0 that, the bank sells an option <span class="arithmatex">\(C\)</span> and at the same time short <span class="arithmatex">\(\Delta\)</span> shares of the underlying stock <span class="arithmatex">\(S\)</span> to have a delta-hedged position:</p>
+<p>Consider at time 0 that, the bank sells an option <span class="arithmatex">\(P\)</span> and at the same time long <span class="arithmatex">\(\Delta\)</span> shares of the underlying stock <span class="arithmatex">\(S\)</span> to setup a delta-hedged position:</p>
 <div class="arithmatex">\[\begin{align}
-    \Pi = -C + \Delta S
+    \Pi = -P + \Delta S
 \end{align}\]</div>
-<p>During the time period <span class="arithmatex">\([t, t + dt]\)</span> the P&amp;L of this portfolio becomes:</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>In a complete market where arbitrage is impossible, the following accounting equation should hold <em>in its expectation</em> at any time <span class="arithmatex">\(t\)</span>:</p>
+<div class="arithmatex">\[\begin{align}
+    \underbrace{\Delta_t S_t}_{\mbox{Asset}} = \underbrace{0}_{\mbox{Equity}} + \underbrace{\underbrace{P_t}_{\mbox{liability to counter-party}} + \underbrace{(-P_t + \Delta_t S_t)}_{\mbox{liability to money market}}}_{\mbox{Liability}}
+\end{align}\]</div>
+<p>At time <span class="arithmatex">\(0\)</span> all terms are zero.</p>
+</div>
+<p>During the time period <span class="arithmatex">\([t, t + dt]\)</span> the P&amp;L of this portfolio, i.e., <em>the bank's equity</em>, becomes:</p>
 <div class="arithmatex">\[\begin{align*}
 \small{
-    d\Pi_t = -\underbrace{dC}_{\mbox{P&amp;L of call}} + \underbrace{\Delta dS}_{\mbox{P&amp;L of underlying}} + \underbrace{rdtC}_{\mbox{interest from option}} - \underbrace{qdt\Delta S}_{\mbox{short interest of stock}}
+    \underbrace{\left(\underbrace{qdt\Delta S}_{\mbox{proceeds from stock}} + \underbrace{\Delta dS}_{\mbox{P&amp;L of stock}}\right)}_{\mbox{Asset P&amp;L}} - \underbrace{\left(\underbrace{dP}_{\mbox{P&amp;L of option}} + \underbrace{rdt(-P+\Delta S)}_{\mbox{interest paid}} \right)}_{\mbox{Liability P&amp;L}}
     }
 \end{align*}\]</div>
-<p>Now, further <span style="color:blue">assume that the option price only depends on the time <span class="arithmatex">\(t\)</span> and the stock price <span class="arithmatex">\(S_t\)</span></span>, and by Ito's lemma, we have</p>
+<p>where we have assumed that the risk-free rate in the money market is <span class="arithmatex">\(r\)</span>. By assuming <span style="color:blue">the option price only depends on time <span class="arithmatex">\(t\)</span> and the stock price <span class="arithmatex">\(S_t\)</span></span> and by Ito's lemma, we have</p>
 <div class="arithmatex">\[\begin{align}
-dC = \frac{\partial S}{\partial t}dt + \frac{\partial C}{\partial S}dS + \frac12 \frac{\partial^2 C}{\partial S^2} (dS)^2 \label{eq:dC}
+dP = \frac{\partial P}{\partial t}dt + \frac{\partial P}{\partial S}dS + \frac12 \frac{\partial^2 P}{\partial S^2} (dS)^2 \label{eq:dP}
 \end{align}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Note that we have not specified the dynamics of <span class="arithmatex">\(dS\)</span>.</p>
 </div>
-<p>Plug in Equation <span class="arithmatex">\(\ref{eq:dC}\)</span> and delta hedge the position by setting <em>dynamically</em></p>
+<p>Plug in Equation <span class="arithmatex">\(\ref{eq:dP}\)</span> and delta hedge the position by setting <em>dynamically</em></p>
 <div class="arithmatex">\[
-\Delta \equiv \frac{\partial C}{\partial S}
+\Delta \equiv \frac{\partial P}{\partial S}
 \]</div>
 <p>we obtain</p>
 <div class="arithmatex">\[
-d\Pi_t = -\left[\frac{\partial S}{\partial t} -rC + q\Delta S \right]dt - \frac12 S^2\frac{\partial^2 C}{\partial S^2} \left(\frac{dS}{S}\right)^2
+P\&amp;L = -\left[\frac{\partial P}{\partial t} -rP + (r - q) S\frac{\partial P}{\partial S}\right]dt - \frac12 S^2\frac{\partial^2 P}{\partial S^2} \left(\frac{dS}{S}\right)^2
 \]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1770,17 +1778,17 @@ d\Pi_t = -\left[\frac{\partial S}{\partial t} -rC + q\Delta S \right]dt - \frac1
 \]</div>
 <p>where the latent variable <span class="arithmatex">\(\hat{\sigma}\)</span> measures the volatility of <span class="arithmatex">\(S\)</span> during time interval <span class="arithmatex">\([t, t + dt]\)</span>, we obtain,</p>
 <div class="arithmatex">\[
-\EEE[d\Pi_t] = -\left[\frac{\partial S}{\partial t} -rC + q\Delta S \right]dt - \frac12 S^2\frac{\partial^2 C}{\partial S^2} \hat{\sigma}^2 dt \equiv 0
+\EEE[P\&amp;L] = -\left[\frac{\partial S}{\partial t} -rP + (r-q)S\frac{\partial P}{\partial S} \right]dt - \frac12 S^2\frac{\partial^2 P}{\partial S^2} \hat{\sigma}^2 dt \equiv 0
 \]</div>
-<p>implies</p>
+<p>which implies</p>
 <div class="arithmatex">\[
-\frac{\partial S}{\partial t} -rC + q\Delta S = - \frac12 S^2\frac{\partial^2 C}{\partial S^2} \hat{\sigma}^2
+\frac{\partial S}{\partial t} -rP + (r-q)S\frac{\partial P}{\partial S} = - \frac12 S^2\frac{\partial^2 C}{\partial S^2} \hat{\sigma}^2
 \]</div>
 <p>and finally,</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <div class="arithmatex">\[\begin{align}
-d\Pi_t = \frac12 S^2\frac{\partial^2 C}{\partial S^2} \left[\hat{\sigma}^2 dt - \left(\frac{dS}{S}\right)^2\right]
+P\&amp;L = \frac12 S^2\frac{\partial^2 P}{\partial S^2} \left[\hat{\sigma}^2 dt - \left(\frac{dS}{S}\right)^2\right]
 \end{align}\]</div>
 <p>The P&amp;L of the delta-hedged position comes from the difference between the implied variance and the realized variance, weighted by the dollar gamma.</p>
 </div>
