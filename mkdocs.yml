@@ -8,9 +8,10 @@ theme:
     - navigation.tabs
     - navigation.top    
 
-markdown_extensions:
+markdown_extensions: 
+  - meta
   - footnotes
-  - def_list
+  - def_list  
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tabbed
@@ -20,6 +21,7 @@ markdown_extensions:
   - pymdownx.superfences # allows for the nesting of code and content blocks inside admonitions    
   - pymdownx.snippets # allows to insert content from other files or other, regular content
   - abbr
+  - attr_list
   - admonition # aka call-outs, are an excellent choice for including side content without significantly interrupting the document flow. 
   - pymdownx.details # make admonitions collapsible
 
@@ -29,4 +31,4 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
   - javascripts/tables.js
-  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
