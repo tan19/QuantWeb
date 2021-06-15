@@ -11,19 +11,19 @@
         <meta name="author" content="emc57721">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
     
     
       
-        <title>Markdown Examples - A Stroll Through the Brambles of Quant Finance Interviews</title>
+        <title>Black Scholes and Vanilla Options - A Stroll Through the Brambles of Quant Finance Interviews</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.875de78c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.875de78c.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
         
       
     
@@ -53,7 +53,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#markdown-examples" class="md-skip">
+        <a href="#black-scholes-and-vanilla-options" class="md-skip">
           Skip to content
         </a>
       
@@ -72,7 +72,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="A Stroll Through the Brambles of Quant Finance Interviews" class="md-header__button md-logo" aria-label="A Stroll Through the Brambles of Quant Finance Interviews" data-md-component="logo">
+    <a href="../.." title="A Stroll Through the Brambles of Quant Finance Interviews" class="md-header__button md-logo" aria-label="A Stroll Through the Brambles of Quant Finance Interviews" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Markdown Examples
+              Black Scholes and Vanilla Options
             
           </span>
         </div>
@@ -149,7 +149,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -164,7 +164,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../0.%20Basics/Basics/" class="md-tabs__link">
+      <a href="../../0.%20Basics/Basics/" class="md-tabs__link">
         0. Basics
       </a>
     </li>
@@ -180,7 +180,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../1.%20Quant%20Developer/Index/" class="md-tabs__link">
+      <a href="../../1.%20Quant%20Developer/Index/" class="md-tabs__link">
         1. Quant Developer
       </a>
     </li>
@@ -196,24 +196,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../2.%20Quant%20Researcher%20%286%29/2.1%20Calculus/" class="md-tabs__link">
+      <a href="../../2.%20Quant%20Researcher%20%286%29/2.1%20Calculus/" class="md-tabs__link">
         2. Quant Researcher (6)
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../3.%20Quant%20Trader%20%282%29/BM/" class="md-tabs__link">
-        3. Quant Trader (2)
       </a>
     </li>
   
@@ -230,7 +214,23 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../BM/" class="md-tabs__link md-tabs__link--active">
+        3. Quant Trader (2)
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../_About/" class="md-tabs__link">
          About
       </a>
     </li>
@@ -247,9 +247,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -259,7 +257,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="A Stroll Through the Brambles of Quant Finance Interviews" class="md-nav__button md-logo" aria-label="A Stroll Through the Brambles of Quant Finance Interviews" data-md-component="logo">
+    <a href="../.." title="A Stroll Through the Brambles of Quant Finance Interviews" class="md-nav__button md-logo" aria-label="A Stroll Through the Brambles of Quant Finance Interviews" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -278,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -314,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0.%20Basics/Basics/" class="md-nav__link">
+      <a href="../../0.%20Basics/Basics/" class="md-nav__link">
         Basics
       </a>
     </li>
@@ -347,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0.%20Basics/1.1%20Mental%20Games/" class="md-nav__link">
+      <a href="../../0.%20Basics/1.1%20Mental%20Games/" class="md-nav__link">
         Examples
       </a>
     </li>
@@ -380,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0.%20Basics/1.1%20Mental%20Games/Logic%20Brainteasers/" class="md-nav__link">
+      <a href="../../0.%20Basics/1.1%20Mental%20Games/Logic%20Brainteasers/" class="md-nav__link">
         Logic Brainteasers
       </a>
     </li>
@@ -419,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0.%20Basics/1.1%20Mental%20Games/Math%20Brainteasers/" class="md-nav__link">
+      <a href="../../0.%20Basics/1.1%20Mental%20Games/Math%20Brainteasers/" class="md-nav__link">
         Math Brainteasers
       </a>
     </li>
@@ -458,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0.%20Basics/1.1%20Mental%20Games/Mental%20Math/" class="md-nav__link">
+      <a href="../../0.%20Basics/1.1%20Mental%20Games/Mental%20Math/" class="md-nav__link">
         Mental Math
       </a>
     </li>
@@ -512,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.%20Quant%20Developer/Index/" class="md-nav__link">
+      <a href="../../1.%20Quant%20Developer/Index/" class="md-nav__link">
         Quant Developer
       </a>
     </li>
@@ -554,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.%20Quant%20Researcher%20%286%29/2.1%20Calculus/" class="md-nav__link">
+      <a href="../../2.%20Quant%20Researcher%20%286%29/2.1%20Calculus/" class="md-nav__link">
         Calculus (6)
       </a>
     </li>
@@ -566,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.%20Quant%20Researcher%20%286%29/2.1%20Differential%20Equations/" class="md-nav__link">
+      <a href="../../2.%20Quant%20Researcher%20%286%29/2.1%20Differential%20Equations/" class="md-nav__link">
         Differential Equations
       </a>
     </li>
@@ -578,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.%20Quant%20Researcher%20%286%29/2.2%20Linear%20Algebra/" class="md-nav__link">
+      <a href="../../2.%20Quant%20Researcher%20%286%29/2.2%20Linear%20Algebra/" class="md-nav__link">
         Linear Algebra
       </a>
     </li>
@@ -590,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.%20Quant%20Researcher%20%286%29/2.3%20Probability/" class="md-nav__link">
+      <a href="../../2.%20Quant%20Researcher%20%286%29/2.3%20Probability/" class="md-nav__link">
         Probability
       </a>
     </li>
@@ -602,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.%20Quant%20Researcher%20%286%29/2.4%20Statistics%20%26%20Machine%20Learning/" class="md-nav__link">
+      <a href="../../2.%20Quant%20Researcher%20%286%29/2.4%20Statistics%20%26%20Machine%20Learning/" class="md-nav__link">
         Statistics & Machine Learning
       </a>
     </li>
@@ -614,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.%20Quant%20Researcher%20%286%29/2.5%20Numerical%20Methods%20and%20Optimization/" class="md-nav__link">
+      <a href="../../2.%20Quant%20Researcher%20%286%29/2.5%20Numerical%20Methods%20and%20Optimization/" class="md-nav__link">
         Numerical Methods & Optimization
       </a>
     </li>
@@ -633,12 +631,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       <label class="md-nav__link" for="__nav_5">
         3. Quant Trader (2)
@@ -656,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.%20Quant%20Trader%20%282%29/BM/" class="md-nav__link">
+      <a href="../BM/" class="md-nav__link">
         Brownian Motion and Related Concepts (2)
       </a>
     </li>
@@ -666,11 +666,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../3.%20Quant%20Trader%20%282%29/BS/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Black Scholes and Vanilla Options
       </a>
+      
     </li>
   
 
@@ -701,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.%20Quant%20Trader%20%282%29/4.2%20Trading%20Strategies/" class="md-nav__link">
+      <a href="../4.2%20Trading%20Strategies/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -740,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.%20Quant%20Trader%20%282%29/4.3%20Markets%20and%20Execution/" class="md-nav__link">
+      <a href="../4.3%20Markets%20and%20Execution/" class="md-nav__link">
         Market
       </a>
     </li>
@@ -779,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.%20Quant%20Trader%20%282%29/5.1%20Portfolio%20Optimization/" class="md-nav__link">
+      <a href="../5.1%20Portfolio%20Optimization/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -804,14 +814,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       <label class="md-nav__link" for="__nav_6">
          About
@@ -827,21 +835,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../_About/" class="md-nav__link">
         Markdown Examples
       </a>
-      
     </li>
   
 
@@ -860,9 +858,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -884,198 +880,7 @@
               
                 
                 
-                <h1 id="markdown-examples">Markdown Examples</h1>
-<div class="arithmatex">\[
-\underbrace{\bA}_{=0} = 0
-\]</div>
-<p><a href="https://oi-wiki.org/" target="_blank">OI Wiki</a></p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Python</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
-<span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
-</span><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
-</span>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
-                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-</code></pre></div>
-</td></tr></table>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">C++</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">f</span><span class="p">()</span> <span class="p">{</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
-</div>
-</div>
-<p>The <code class="highlight"><span class="nb">range</span><span class="p">()</span></code> function is highlighted.</p>
-<div class="admonition question">
-<p class="admonition-title">Ex. 2.1</p>
-<p>Suppose each of <span class="arithmatex">\(K\)</span>-classes has associated target <span class="arithmatex">\(t_k\)</span>, which is a vector of all zeros, except a one in the <span class="arithmatex">\(k\)</span>-th position. Show that classifying to the largest of <span class="arithmatex">\(\hat y\)</span> amounts to choosing the closet target, <span class="arithmatex">\(\min_k\|t_k-\hat y\|\)</span>, if the elements of <span class="arithmatex">\(\hat y\)</span> sum to one.</p>
-</div>
-<details class="done" open="open"><summary>Soln. 2.1</summary><p>We need to prove:</p>
-<div class="arithmatex">\[\begin{equation}
-\underset{k}{\operatorname{argmax}} \hat y_k = \underset{k}{\operatorname{argmin}} \|t_k-\hat y\|^2             
-\label{eq:2-1a}
-\end{equation}\]</div>
-<p>By definition of <span class="arithmatex">\(t_k\)</span>, we have</p>
-<div class="arithmatex">\[\begin{align}
-    \|t_k-\hat y\|^2 
-    &amp;= (1-\hat y_k)^2 + \sum_{l \neq k }(0 - \hat y_l)^2\nonumber\\
-    &amp;= (1-\hat y_k)^2 + \sum_{l \neq k }\hat y_l^2
-    \label{eq:2-1b}
-\end{align}\]</div>
-<p>Given <span class="arithmatex">\(\eqref{eq:2-1b}\)</span>, it's straightforward to see that <span class="arithmatex">\(\eqref{eq:2-1a}\)</span> indeed holds.</p>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Python</label><div class="tabbed-content"></div>
-</div>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
-<span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
-</span><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
-</span>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
-                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-</code></pre></div>
-</td></tr></table>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">C++</label><div class="tabbed-content"></div>
-</div>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">f</span><span class="p">()</span> <span class="p">{</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
-</details>
-<p>The <code class="highlight"><span class="nb">range</span><span class="p">()</span></code> function is highlighted.</p>
-<div class="admonition info inline">
-<p class="admonition-title">Info</p>
-<p>The assumption <span class="arithmatex">\(\sum_{k=1}^K\hat y_k=1\)</span> is actually not required.
-[<abbr title="Capital Asset Pricing Model">CAPM</abbr>]: Capital Asset Pricing Model</p>
-</div>
-<p>asdfasdfasdfa 
-asdfasd 
-asdfasd
-adddasdfasdfasdfa 
-asdfasd 
-asdfasd
-adddasdfasdfasdfa 
-asdfasd 
-asdfasd
-addd</p>
-<p>asdfasdfasdfa 
-asdfasd 
-asdfasd
-addd</p>
-<p>asdfasdfasdfa 
-asdfasd 
-asdfasd
-addd</p>
-<div class="admonition info inline end">
-<p class="admonition-title">Info</p>
-<p>The assumption <span class="arithmatex">\(\sum_{k=1}^K\hat y_k=1\)</span> is actually not required.
-[<abbr title="Capital Asset Pricing Model">CAPM</abbr>]: Capital Asset Pricing Model</p>
-</div>
-<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Unordered list</label><div class="tabbed-content">
-<ul>
-<li>Sed sagittis eleifend rutrum</li>
-<li>Donec vitae suscipit est</li>
-<li>Nulla tempor lobortis orci</li>
-</ul>
-</div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Ordered list</label><div class="tabbed-content">
-<ol>
-<li>Sed sagittis eleifend rutrum</li>
-<li>Donec vitae suscipit est</li>
-<li>Nulla tempor lobortis orci</li>
-</ol>
-</div>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Unordered List</label><div class="tabbed-content">
-<p><em>Example</em>:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">*</span> Sed sagittis eleifend rutrum
-<span class="k">*</span> Donec vitae suscipit est
-<span class="k">*</span> Nulla tempor lobortis orci
-</code></pre></div>
-</td></tr></table>
-<p><em>Result</em>:</p>
-<ul>
-<li>Sed sagittis eleifend rutrum</li>
-<li>Donec vitae suscipit est</li>
-<li>Nulla tempor lobortis orci</li>
-</ul>
-</div>
-<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Ordered List</label><div class="tabbed-content">
-<p><em>Example</em>:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">1.</span> Sed sagittis eleifend rutrum
-<span class="k">2.</span> Donec vitae suscipit est
-<span class="k">3.</span> Nulla tempor lobortis orci
-</code></pre></div>
-</td></tr></table>
-<p><em>Result</em>:</p>
-<ol>
-<li>Sed sagittis eleifend rutrum</li>
-<li>Donec vitae suscipit est</li>
-<li>Nulla tempor lobortis orci        </li>
-</ol>
-</div>
-</div>
-</div>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>GET</code></td>
-<td>:material-check:     Fetch resource</td>
-</tr>
-<tr>
-<td><code>PUT</code></td>
-<td>:material-check-all: Update resource</td>
-</tr>
-<tr>
-<td><code>DELETE</code></td>
-<td>:material-close:     Delete resource</td>
-</tr>
-</tbody>
-</table>
-<p>Lorem ipsum<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dolor sit amet, consectetur adipiscing elit.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
-<figure>
-  <img src="https://dummyimage.com/600x400/eee/aaa" width="300" />
-  <figcaption>Image caption</figcaption>
-</figure>
-
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-massa, nec semper lorem quam in massa.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
-                
-                  
+                <h1 id="black-scholes-and-vanilla-options">Black Scholes and Vanilla Options</h1>
                 
               
               
@@ -1098,7 +903,7 @@ massa, nec semper lorem quam in massa.&#160;<a class="footnote-backref" href="#f
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../3.%20Quant%20Trader%20%282%29/5.1%20Portfolio%20Optimization/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../BM/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1107,11 +912,25 @@ massa, nec semper lorem quam in massa.&#160;<a class="footnote-backref" href="#f
               <span class="md-footer__direction">
                 Previous
               </span>
-              Index
+              Brownian Motion and Related Concepts (2)
             </div>
           </div>
         </a>
       
+      
+        <a href="../4.2%20Trading%20Strategies/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Index
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
@@ -1138,18 +957,18 @@ massa, nec semper lorem quam in massa.&#160;<a class="footnote-backref" href="#f
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.34eae1b6.min.js"></script>
+      <script src="../../assets/javascripts/bundle.34eae1b6.min.js"></script>
       
-        <script src="../javascripts/config.js"></script>
+        <script src="../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="../javascripts/tables.js"></script>
+        <script src="../../javascripts/tables.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
