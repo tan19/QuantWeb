@@ -9,12 +9,17 @@ The portfolio optimization problem, seeking optimal weight $\w$, can be formulat
 ## Problem A: find the global minimum variance portfolio
 !!! Problem "Problem A: find the global minimum variance portfolio"
     \begin{align*}
-    &\min_\w \w^T\bSigma\w \\
+    &\min_\w \frac12 \w^T\bSigma\w \\
     s.t.~ & \w^T\w = 1
     \end{align*}
 
     where $\mu_0$ is the required rate of return. 
 
+Lagrangian equation is
+
+$$
+    f(\w, \lambda) = \frac12 \w^T\bSigma\w + \lambda(\w^T\w - 1)
+$$
 
 ## Problem B: minimize portfolio variance given required return
 !!! Problem "Problem A: minimize portfolio variance given required return"
@@ -65,3 +70,4 @@ or
     \end{align*}
 
     where $\mu_0$ is the required rate of return. 
+
