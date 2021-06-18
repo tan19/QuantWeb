@@ -6,7 +6,7 @@ hide:
 # Markdown Examples
 
 $$
-\underbrace{\bA}_{=0} = 0
+\underbrace{\A}_{=0} = 0
 $$
 
 <a href="https://oi-wiki.org/" target="_blank">OI Wiki</a>

@@ -1,1 +1,6 @@
-A stroll through the brambles of Quant Finance interviews.
+This chapter discusses the following topics:
+
+- Programming Languages
+- Algorithms
+- Software Engineering
+- Computer Systems
