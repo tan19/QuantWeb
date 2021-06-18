@@ -10,17 +10,48 @@ The portfolio optimization problem, seeking optimal weight $\w$, can be formulat
 !!! Problem "Problem A: find the global minimum variance portfolio"
     \begin{align*}
     &\min_\w \frac12 \w^T\bSigma\w \\
-    s.t.~ & \w^T\w = 1
+    s.t.~ & \1^T\w = 1
     \end{align*}
 
     where $\mu_0$ is the required rate of return. 
 
-Lagrangian equation is
+???+ Done "Solution A: find the global minimum variance portfolio"
+    The local optimum is attained when the gradient of the Lagrangian equation is zero:
 
-$$
-    f(\w, \lambda) = \frac12 \w^T\bSigma\w + \lambda(\w^T\w - 1)
-$$
+    $$
+        \nabla f(\w, \lambda) = \nabla \left[\frac12 \w^T\bSigma\w - \lambda(\1^T\w - 1)\right] \equiv \0
+    $$
 
+    That is,
+
+    $$
+        \begin{cases}
+            \bSigma\w - \lambda\1 &\equiv \0 \\
+            \1^T\w &= 1
+        \end{cases}
+    $$
+
+    From the first equation we obtain
+
+    $$
+        \w = \lambda\Sigma^{-1}\1
+    $$
+
+    Plug in to the second equation, we have
+
+    $$
+        \lambda = \frac{1}{\1^T\Sigma\1}
+    $$
+
+    Finally,
+
+    $$
+        \w = \frac{\Sigma^{-1}\1}{\1^T\Sigma\1}
+    $$
+
+    **Example 1:** When the assets of the portfolio are uncorrelated and have identical variances, that is, $\Sigma = \sigma^2\I_n$,  the optimal weights are equal, i.e., $\w = (1/n, \dots, 1/n)^T$.
+
+    
 ## Problem B: minimize portfolio variance given required return
 !!! Problem "Problem A: minimize portfolio variance given required return"
     \begin{align*}
