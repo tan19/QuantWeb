@@ -34,22 +34,22 @@ The portfolio optimization problem, seeking optimal weight $\w$, can be formulat
     From the first equation we obtain
 
     $$
-        \w = \lambda\Sigma^{-1}\1
+        \w = \lambda\bSigma^{-1}\1
     $$
 
     Plug in to the second equation, we have
 
     $$
-        \lambda = \frac{1}{\1^T\Sigma\1}
+        \lambda = \frac{1}{\1^T\bSigma\1}
     $$
 
     Finally,
 
     $$
-        \w = \frac{\Sigma^{-1}\1}{\1^T\Sigma\1}
+        \w = \frac{\bSigma^{-1}\1}{\1^T\bSigma\1}
     $$
 
-    **Example 1:** When the assets of the portfolio are uncorrelated and have identical variances, that is, $\Sigma = \sigma^2\I_n$,  the optimal weights are equal, i.e., $\w = (1/n, \dots, 1/n)^T$.
+    **Example 1:** When the assets of the portfolio are uncorrelated and have identical variances, that is, $\bSigma = \sigma^2\I_n$,  the optimal weights are equal, i.e., $\w = (1/n, \dots, 1/n)^T$.
 
     
 ## Problem B: minimize portfolio variance given required return
