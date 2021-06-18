@@ -64,6 +64,7 @@ window.MathJax = {
       w: "\\boldsymbol{w}",            
       y: "\\boldsymbol{y}",
       0: "\\boldsymbol{0}",
+      1: "\\boldsymbol{1}",
       bSigma: "\\boldsymbol{\\Sigma}",
       bmu: "\\boldsymbol{\\mu}",
       bsigma: "\\boldsymbol{\\sigma}",

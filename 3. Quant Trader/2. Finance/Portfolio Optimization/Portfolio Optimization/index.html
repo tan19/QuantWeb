@@ -2985,11 +2985,50 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5_5" type="checkbox" id="__nav_4_5_5" >
       
       <label class="md-nav__link" for="__nav_4_5_5">
+        5. Time Series
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="5. Time Series" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_5_5">
+          <span class="md-nav__icon md-icon"></span>
+          5. Time Series
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.%20Quant%20Researcher/4.%20Machine%20Learning/5.%20Time%20Series/Kalman%20Filter/" class="md-nav__link">
+        Kalman Filter
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5_6" type="checkbox" id="__nav_4_5_6" >
+      
+      <label class="md-nav__link" for="__nav_4_5_6">
         Causal Inference
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Causal Inference" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_5_5">
+        <label class="md-nav__title" for="__nav_4_5_6">
           <span class="md-nav__icon md-icon"></span>
           Causal Inference
         </label>
@@ -3768,14 +3807,35 @@
 <p class="admonition-title">Problem A: find the global minimum variance portfolio</p>
 <div class="arithmatex">\[\begin{align*}
 &amp;\min_\w \frac12 \w^T\bSigma\w \\
-s.t.~ &amp; \w^T\w = 1
+s.t.~ &amp; \1^T\w = 1
 \end{align*}\]</div>
 <p>where <span class="arithmatex">\(\mu_0\)</span> is the required rate of return. </p>
 </div>
-<p>Lagrangian equation is</p>
+<details class="done" open="open"><summary>Solution A: find the global minimum variance portfolio</summary><p>The local optimum is attained when the gradient of the Lagrangian equation is zero:</p>
 <div class="arithmatex">\[
-    f(\w, \lambda) = \frac12 \w^T\bSigma\w + \lambda(\w^T\w - 1)
+    \nabla f(\w, \lambda) = \nabla \left[\frac12 \w^T\bSigma\w - \lambda(\1^T\w - 1)\right] \equiv \0
 \]</div>
+<p>That is,</p>
+<div class="arithmatex">\[
+    \begin{cases}
+        \bSigma\w - \lambda\1 &amp;\equiv \0 \\
+        \1^T\w &amp;= 1
+    \end{cases}
+\]</div>
+<p>From the first equation we obtain</p>
+<div class="arithmatex">\[
+    \w = \lambda\bSigma^{-1}\1
+\]</div>
+<p>Plug in to the second equation, we have</p>
+<div class="arithmatex">\[
+    \lambda = \frac{1}{\1^T\bSigma\1}
+\]</div>
+<p>Finally,</p>
+<div class="arithmatex">\[
+    \w = \frac{\bSigma^{-1}\1}{\1^T\bSigma\1}
+\]</div>
+<p><strong>Example 1:</strong> When the assets of the portfolio are uncorrelated and have identical variances, that is, <span class="arithmatex">\(\bSigma = \sigma^2\I_n\)</span>,  the optimal weights are equal, i.e., <span class="arithmatex">\(\w = (1/n, \dots, 1/n)^T\)</span>.</p>
+</details>
 <h2 id="problem-b-minimize-portfolio-variance-given-required-return">Problem B: minimize portfolio variance given required return</h2>
 <div class="admonition problem">
 <p class="admonition-title">Problem A: minimize portfolio variance given required return</p>
