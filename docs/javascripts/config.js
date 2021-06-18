@@ -73,6 +73,7 @@ window.MathJax = {
       EEE: "\\mathbb{E}",
       RRR: "\\mathbb{R}",
       QQQ: "\\mathbb{Q}",
+      AA: "\\mathcal{A}",
       Var: "\\mbox{Var}",      
       Trace: "\\mbox{Trace}",
       bm: ["\\boldsymbol #1", 1]
