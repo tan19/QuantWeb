@@ -3856,7 +3856,7 @@
                 
                 
                 <h1 id="portfolio-optimization">Portfolio Optimization</h1>
-<p>Suppose there are <span class="arithmatex">\(n\)</span> assets whose rate of return vector <span class="arithmatex">\(\r\)</span> has mean <span class="arithmatex">\(\mu\)</span> and covariance <span class="arithmatex">\(\bSigma\)</span>.</p>
+<p>Suppose there are <span class="arithmatex">\(n\)</span> assets whose rate of return vector <span class="arithmatex">\(\r\)</span> has mean <span class="arithmatex">\(\bmu\)</span> and covariance <span class="arithmatex">\(\bSigma\)</span>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Note</p>
 <p>The mean vector and the covariance matrix are of the return vector <span class="arithmatex">\(\r\)</span>, not of the asset price <span class="arithmatex">\(\S\)</span>.</p>
@@ -3898,45 +3898,47 @@ s.t.~ &amp; \1^T\w = 1
 </details>
 <h2 id="problem-b-minimize-portfolio-variance-given-required-return">Problem B: minimize portfolio variance given required return</h2>
 <div class="admonition problem">
-<p class="admonition-title">Problem A: minimize portfolio variance given required return</p>
+<p class="admonition-title">Problem B: minimize portfolio variance given required return</p>
 <div class="arithmatex">\[\begin{align*}
-&amp;\min_\w \w^T\bSigma\w \\
-s.t.~ &amp;\w^T\bmu = \mu_0 \mbox{ and } \w^T\w = 1
+&amp;\min_\w \frac12\w^T\bSigma\w \\
+s.t.~ &amp;\bmu^T\w = \mu_0 \mbox{ and } \1^T\w = 1
 \end{align*}\]</div>
 <p>where <span class="arithmatex">\(\mu_0\)</span> is the required rate of return. </p>
 </div>
-<p>Solving the Lagrangian function</p>
+<details class="done" open="open"><summary>Solution B: minimize portfolio variance given required return</summary><p>Optimizing the Lagrangian function</p>
 <div class="arithmatex">\[\begin{align*}
-    f(\alpha, \beta, \w) = \frac12 \w^T\bSigma\w + \alpha (\w^T\bmu - \mu_0) + \beta (\w^T\w - 1)
+    f(\lambda_0, \lambda_1, \w) = \frac12 \w^T\bSigma\w + \lambda_0 (\w^T\bmu - \mu_0) + \lambda_1 (\1^T\w - 1)
 \end{align*}\]</div>
 <p>gives us</p>
+<div class="arithmatex">\[\begin{align}
+    \bSigma\w + \lambda_0\bmu + \lambda_1 \1 = \0 \implies \w = -\bSigma^{-1}(\lambda_0\bmu + \lambda_1\1) \label{eq:1}
+\end{align}\]</div>
+<p>Plug in <span class="arithmatex">\(\w\)</span> into the two constraint equations we obtain    </p>
+<div class="arithmatex">\[\begin{cases}
+    -\bmu^T\bSigma^{-1}(\lambda_0\bmu + \lambda_1\1) &amp;= \mu_0 \\
+    -\1^T\bSigma^{-1}(\lambda_0\bmu + \lambda_1\1) &amp;= 1
+\end{cases}\]</div>
+<p>Let</p>
 <div class="arithmatex">\[\begin{align*}
-    &amp;\bSigma\w + \bmu\lambda + \beta \w &amp;= \0\\
-    &amp;\bmu^T\w &amp;= \mu_0\\
-    &amp;\w^T\w &amp;= 1
+\begin{cases}
+    a &amp; = \mu^T\bSigma^{-1}\mu\\
+    b &amp; = \mu^T\bSigma^{-1}\1\\
+    c &amp; = \1^T\bSigma^{-1}\1
+\end{cases}
+\implies
+\begin{cases}
+    \lambda_0 &amp;= \frac{b - \mu_0c}{b^2 - ac}\\
+    \lambda_1 &amp;= \frac{a - \mu_0b}{b^2 - ac}
+\end{cases}
 \end{align*}\]</div>
-<p>or</p>
-<div class="arithmatex">\[\begin{align*}
-    \begin{bmatrix}
-    \bSigma &amp; \bmu \\
-    \bmu^T &amp; 0
-    \end{bmatrix}
-    \begin{bmatrix}
-    \w\\
-    \lambda
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-    \0\\
-    \mu_0
-    \end{bmatrix}
-\end{align*}\]</div>
+<p>and finally <span class="arithmatex">\(\w\)</span> can be calculated using <span class="arithmatex">\(\lambda_0\)</span> and <span class="arithmatex">\(\lambda_1\)</span> with Equation (<span class="arithmatex">\(\ref{eq:1}\)</span>).</p>
+</details>
 <h2 id="problem-c-maximize-portfolio-return-given-required-risk">Problem C: maximize portfolio return given required risk</h2>
 <div class="admonition problem">
 <p class="admonition-title">Problem B: maximize portfolio return given required risk</p>
 <div class="arithmatex">\[\begin{align*}
 &amp;\max_\w \w^T\bmu \\
-s.t.~ &amp;\w^T\bSigma\w = \sigma_0^2 \mbox{ and } \w^T\w = 1
+s.t.~ &amp;\w^T\bSigma\w = \Sigma_0^2 \mbox{ and } \w^T\w = 1
 \end{align*}\]</div>
 <p>where <span class="arithmatex">\(\mu_0\)</span> is the required rate of return. </p>
 </div>
