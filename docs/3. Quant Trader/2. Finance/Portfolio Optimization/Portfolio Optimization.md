@@ -1,5 +1,5 @@
 # Portfolio Optimization
-Suppose there are $n$ assets whose rate of return vector $\r$ has mean $\mu$ and covariance $\bSigma$.
+Suppose there are $n$ assets whose rate of return vector $\r$ has mean $\bmu$ and covariance $\bSigma$.
 
 !!! Warning "Note"
     The mean vector and the covariance matrix are of the return vector $\r$, not of the asset price $\S$.
@@ -34,70 +34,76 @@ The portfolio optimization problem, seeking optimal weight $\w$, can be formulat
     From the first equation we obtain
 
     $$
-        \w = \lambda\Sigma^{-1}\1
+        \w = \lambda\bSigma^{-1}\1
     $$
 
     Plug in to the second equation, we have
 
     $$
-        \lambda = \frac{1}{\1^T\Sigma\1}
+        \lambda = \frac{1}{\1^T\bSigma\1}
     $$
 
     Finally,
 
     $$
-        \w = \frac{\Sigma^{-1}\1}{\1^T\Sigma\1}
+        \w = \frac{\bSigma^{-1}\1}{\1^T\bSigma\1}
     $$
 
-    **Example 1:** When the assets of the portfolio are uncorrelated and have identical variances, that is, $\Sigma = \sigma^2\I_n$,  the optimal weights are equal, i.e., $\w = (1/n, \dots, 1/n)^T$.
+    **Example 1:** When the assets of the portfolio are uncorrelated and have identical variances, that is, $\bSigma = \bSigma^2\I_n$,  the optimal weights are equal, i.e., $\w = (1/n, \dots, 1/n)^T$.
 
     
 ## Problem B: minimize portfolio variance given required return
-!!! Problem "Problem A: minimize portfolio variance given required return"
+!!! Problem "Problem B: minimize portfolio variance given required return"
     \begin{align*}
-    &\min_\w \w^T\bSigma\w \\
-    s.t.~ &\w^T\bmu = \mu_0 \mbox{ and } \w^T\w = 1
+    &\min_\w \frac12\w^T\bSigma\w \\
+    s.t.~ &\bmu^T\w = \mu_0 \mbox{ and } \1^T\w = 1
     \end{align*}
 
     where $\mu_0$ is the required rate of return. 
 
-Solving the Lagrangian function
+???+ Done "Solution B: minimize portfolio variance given required return"    
+    Optimizing the Lagrangian function
 
-\begin{align*}
-    f(\alpha, \beta, \w) = \frac12 \w^T\bSigma\w + \alpha (\w^T\bmu - \mu_0) + \beta (\w^T\w - 1)
-\end{align*}
+    \begin{align*}
+        f(\lambda_0, \lambda_1, \w) = \frac12 \w^T\bSigma\w + \lambda_0 (\w^T\bmu - \mu_0) + \lambda_1 (\1^T\w - 1)
+    \end{align*}
 
-gives us
+    gives us
 
-\begin{align*}
-    &\bSigma\w + \bmu\lambda + \beta \w &= \0\\
-    &\bmu^T\w &= \mu_0\\
-    &\w^T\w &= 1
-\end{align*}
+    \begin{align}
+        \bSigma\w + \lambda_0\bmu + \lambda_1 \1 = \0 \implies \w = -\bSigma^{-1}(\lambda_0\bmu + \lambda_1\1) \label{eq:1}
+    \end{align}
 
-or
+    Plug in $\w$ into the two constraint equations we obtain    
 
-\begin{align*}
-    \begin{bmatrix}
-    \bSigma & \bmu \\
-    \bmu^T & 0
-    \end{bmatrix}
-    \begin{bmatrix}
-    \w\\
-    \lambda
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-    \0\\
-    \mu_0
-    \end{bmatrix}
-\end{align*}
+    \begin{cases}
+        -\bmu^T\bSigma^{-1}(\lambda_0\bmu + \lambda_1\1) &= \mu_0 \\
+        -\1^T\bSigma^{-1}(\lambda_0\bmu + \lambda_1\1) &= 1
+    \end{cases}
+
+    Let
+
+    \begin{align*}
+    \begin{cases}
+        a & = \mu^T\bSigma^{-1}\mu\\
+        b & = \mu^T\bSigma^{-1}\1\\
+        c & = \1^T\bSigma^{-1}\1
+    \end{cases}
+    \implies
+    \begin{cases}
+        \lambda_0 &= \frac{b - \mu_0c}{b^2 - ac}\\
+        \lambda_1 &= \frac{a - \mu_0b}{b^2 - ac}
+    \end{cases}
+    \end{align*}
+
+    and finally $\w$ can be calculated using $\lambda_0$ and $\lambda_1$ with Equation ($\ref{eq:1}$).
+
 
 ## Problem C: maximize portfolio return given required risk
 !!! Problem "Problem B: maximize portfolio return given required risk"
     \begin{align*}
     &\max_\w \w^T\bmu \\
-    s.t.~ &\w^T\bSigma\w = \sigma_0^2 \mbox{ and } \w^T\w = 1
+    s.t.~ &\w^T\bSigma\w = \bSigma_0^2 \mbox{ and } \w^T\w = 1
     \end{align*}
 
     where $\mu_0$ is the required rate of return. 
