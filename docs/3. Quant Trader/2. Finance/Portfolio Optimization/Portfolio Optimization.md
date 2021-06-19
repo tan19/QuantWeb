@@ -104,7 +104,7 @@ The portfolio optimization problem, seeking optimal weight $\w$, can be formulat
 !!! Problem "Problem B: maximize portfolio return given required risk"
     \begin{align*}
     &\max_\w \w^T\bmu \\
-    s.t.~ &\w^T\bSigma\w = \bSigma_0^2 \mbox{ and } \w^T\w = 1
+    s.t.~ &\w^T\bSigma\w = \Sigma_0^2 \mbox{ and } \w^T\w = 1
     \end{align*}
 
     where $\mu_0$ is the required rate of return. 
