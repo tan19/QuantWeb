@@ -6,7 +6,11 @@ theme:
   name: material
   features:
     - navigation.tabs
-    - navigation.top    
+    - navigation.top
+
+plugins:  
+  - macros:
+      include_dir: "LeetCode"
 
 markdown_extensions: 
   - meta
