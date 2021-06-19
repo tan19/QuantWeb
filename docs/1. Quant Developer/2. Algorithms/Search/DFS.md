@@ -1,5 +1,45 @@
 # DFS
 
+## Introduction
+DFS searches a tree or graph as far as possible along each branch before backtracking. The time complexity is $O(|V| + |E|)$, where $|V|$ is the number of vertices and $|E|$ the number of edges; and the space complexity is $O(|V|)$. The pseudocode can be written as follows:
+
+=== "Recursive Version"
+    ``` Python hl_lines="3 6 9 14"
+        # Pseudocode of DFS; recursive version
+        def DFS(G, v):
+            # 1. LABEL
+            label v as VISITED
+
+            # 2. SETUP and INITIALIZE
+            setup and initialize
+
+            # 3. DFS and UPDATE
+            for w in G.adjacentEdges(v) do:
+                if w is not VISITED:
+                    DFS(G, w)
+
+            # 4. SUMMARIZE and RETURN                                         
+            return
+
+    ```
+=== "Non-recursive Version"
+    ``` Python hl_lines="8"
+        # Pseudocode of DFS; non-recursive version
+        def DFS(G):
+            Stack.append(root) // root is the starting point
+            while Stack:
+                v = Stack.pop()
+                if v is not VISITED:
+                    label v as VISITED
+                    // do some work here
+                    for w in G.adjacentEdge(v) do:
+                        Stack.append(w)
+
+    ```
+
+## Problems
+{% include "LC695.md" %}
+
 == 基础知识：
 常见的DFS用来解决什么问题？(1) 图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度（2）排列组合（3） 遍历一个图（或者树）（4）找出图或者树中符合题目要求的全部方案
 DFS基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
