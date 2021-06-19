@@ -29,6 +29,13 @@ $$
     }
     ```
 
+=== "Java"
+    ``` Java
+    void f() {
+
+    }
+    ```
+
 The `#!python range()` function is highlighted.
 
 !!! Question "Ex. 2.1"
