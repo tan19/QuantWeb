@@ -1547,6 +1547,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lc1034-coloring-a-border-medium" class="md-nav__link">
+    LC1034. Coloring A Border (Medium)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3904,6 +3911,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lc1034-coloring-a-border-medium" class="md-nav__link">
+    LC1034. Coloring A Border (Medium)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4005,6 +4019,11 @@
 <tr>
 <td>1254</td>
 <td>Number of Closed Islands</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>1034</td>
+<td>Coloring A Border</td>
 <td>Medium</td>
 </tr>
 </tbody>
@@ -4234,7 +4253,8 @@
 <span class="normal">33</span>
 <span class="normal">34</span>
 <span class="normal">35</span>
-<span class="normal">36</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+<span class="normal">36</span>
+<span class="normal">37</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span> <span class="o">=</span> <span class="p">{}</span>
 
@@ -4256,9 +4276,10 @@
         <span class="n">left</span>  <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
         <span class="n">right</span> <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="p">{</span><span class="n">up</span><span class="p">,</span> <span class="n">down</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">}:</span>
-            <span class="k">if</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">findWayOut</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">w</span><span class="p">]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span> <span class="c1"># don&#39;t have to continue if found way out already</span>
+                <span class="k">if</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">findWayOut</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">w</span><span class="p">]</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span>
 
@@ -4270,6 +4291,82 @@
                     <span class="n">numClosedIslands</span> <span class="o">+=</span> <span class="mi">1</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">findWayOut</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">))</span> <span class="k">else</span> <span class="mi">0</span>
 
         <span class="k">return</span> <span class="n">numClosedIslands</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="lc1034-coloring-a-border-medium">LC1034. Coloring A Border (Medium)</h3>
+<details class="note" open="open"><summary>LC1034. Coloring A Border (Medium)</summary><div class="tabbed-set" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">Info</label><div class="tabbed-content">
+<ul>
+<li><strong><a href="https://leetcode.com/problems/coloring-a-border/" target="_blank">LC1034. Coloring A Border (Medium)</a></strong></li>
+<li>Algorithm: DFS</li>
+<li>Time Complexity: <span class="arithmatex">\(O(|V| + |E|)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(|E|)\)</span></li>
+</ul>
+</div>
+<input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><label for="__tabbed_8_2">Solution</label><div class="tabbed-content">
+<p>DFS.</p>
+</div>
+<input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><label for="__tabbed_8_3">DFS <span class="arithmatex">\(O(|V|+|E|)\)</span></label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Python</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">withinBoundary</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grid</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>        
+
+    <span class="k">def</span> <span class="nf">colorBorder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grid</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span> <span class="n">r0</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">c0</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[(</span><span class="n">r0</span><span class="p">,</span><span class="n">c0</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1</span>                               
+
+        <span class="n">toColor</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">r1</span><span class="p">,</span> <span class="n">c1</span> <span class="ow">in</span> <span class="p">{(</span><span class="n">r0</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">c0</span><span class="p">),</span> <span class="p">(</span><span class="n">r0</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">c0</span><span class="p">),</span> <span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">c0</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">c0</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}:</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">r1</span><span class="p">,</span> <span class="n">c1</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">withinBoundary</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">r1</span><span class="p">,</span> <span class="n">c1</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">grid</span><span class="p">[</span><span class="n">r1</span><span class="p">][</span><span class="n">c1</span><span class="p">]</span> <span class="o">!=</span> <span class="n">grid</span><span class="p">[</span><span class="n">r0</span><span class="p">][</span><span class="n">c0</span><span class="p">]:</span>
+                        <span class="n">toColor</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">colorBorder</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">r1</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">toColor</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">if</span> <span class="n">toColor</span><span class="p">:</span>
+            <span class="n">grid</span><span class="p">[</span><span class="n">r0</span><span class="p">][</span><span class="n">c0</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span>            
+
+        <span class="k">return</span> <span class="n">grid</span>
 </code></pre></div>
 </td></tr></table>
 </div>
