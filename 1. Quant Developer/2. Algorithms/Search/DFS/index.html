@@ -1540,6 +1540,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#1254-number-of-closed-islands-medium" class="md-nav__link">
+    1254. Number of Closed Islands (Medium)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3273,10 +3280,37 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_1" type="checkbox" id="__nav_5_3_1" >
+      
+      <label class="md-nav__link" for="__nav_5_3_1">
+        Asset Pricing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Asset Pricing" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Asset Pricing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../../3.%20Quant%20Trader/2.%20Finance/Basic%20Concepts/" class="md-nav__link">
-        Basic Concepts
+      <a href="../../../../3.%20Quant%20Trader/2.%20Finance/Asset%20Pricing/" class="md-nav__link">
+        Asset Pricing
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3292,13 +3326,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_2" type="checkbox" id="__nav_5_3_2" >
       
       <label class="md-nav__link" for="__nav_5_3_2">
-        Asset Pricing
+        Basic Concepts
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Asset Pricing" data-md-level="3">
+      <nav class="md-nav" aria-label="Basic Concepts" data-md-level="3">
         <label class="md-nav__title" for="__nav_5_3_2">
           <span class="md-nav__icon md-icon"></span>
-          Asset Pricing
+          Basic Concepts
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -3307,8 +3341,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3.%20Quant%20Trader/2.%20Finance/Asset%20Pricing/" class="md-nav__link">
-        Asset Pricing
+      <a href="../../../../3.%20Quant%20Trader/2.%20Finance/Basic%20Concepts/Basic%20Concepts/" class="md-nav__link">
+        Basic Concepts
       </a>
     </li>
   
@@ -3863,6 +3897,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#1254-number-of-closed-islands-medium" class="md-nav__link">
+    1254. Number of Closed Islands (Medium)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3959,6 +4000,11 @@
 <tr>
 <td>200</td>
 <td>Number of Islands</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>1254</td>
+<td>Number of Closed Islands</td>
 <td>Medium</td>
 </tr>
 </tbody>
@@ -4132,6 +4178,98 @@
                     <span class="n">islands</span> <span class="o">+=</span> <span class="mi">1</span>
 
         <span class="k">return</span> <span class="n">islands</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="1254-number-of-closed-islands-medium">1254. Number of Closed Islands (Medium)</h3>
+<details class="note" open="open"><summary>1254. Number of Closed Islands (Medium)</summary><div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Info</label><div class="tabbed-content">
+<ul>
+<li><strong><a href="https://leetcode-cn.com/problems/number-of-closed-islands/" target="_blank">1254. Number of Closed Islands (Medium)</a></strong></li>
+<li>Algorithm: DFS</li>
+<li>Time Complexity: <span class="arithmatex">\(O(|V| + |E|)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(|E|)\)</span></li>
+</ul>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Solution</label><div class="tabbed-content">
+<p>DFS.</p>
+</div>
+<input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">DFS <span class="arithmatex">\(O(|V|+|E|)\)</span></label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Python</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span> <span class="nf">findWayOut</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grid</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>        
+        <span class="c1"># mark as visited</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="c1"># base case</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">return</span> <span class="kc">True</span>
+
+        <span class="k">if</span> <span class="n">grid</span><span class="p">[</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="c1"># DFS</span>
+        <span class="n">up</span>    <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">down</span>  <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">left</span>  <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">right</span> <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="p">{</span><span class="n">up</span><span class="p">,</span> <span class="n">down</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">}:</span>
+            <span class="k">if</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">findWayOut</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">w</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">[</span><span class="n">v</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">closedIsland</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grid</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="n">numClosedIslands</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+                <span class="k">if</span> <span class="n">grid</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">VISITED</span><span class="p">:</span>
+                    <span class="n">numClosedIslands</span> <span class="o">+=</span> <span class="mi">1</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">findWayOut</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">))</span> <span class="k">else</span> <span class="mi">0</span>
+
+        <span class="k">return</span> <span class="n">numClosedIslands</span>
 </code></pre></div>
 </td></tr></table>
 </div>

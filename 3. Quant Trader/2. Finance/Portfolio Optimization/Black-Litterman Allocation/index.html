@@ -3204,10 +3204,37 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_1" type="checkbox" id="__nav_5_3_1" >
+      
+      <label class="md-nav__link" for="__nav_5_3_1">
+        Asset Pricing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Asset Pricing" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Asset Pricing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../Basic%20Concepts/" class="md-nav__link">
-        Basic Concepts
+      <a href="../../Asset%20Pricing/" class="md-nav__link">
+        Asset Pricing
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3223,13 +3250,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_2" type="checkbox" id="__nav_5_3_2" >
       
       <label class="md-nav__link" for="__nav_5_3_2">
-        Asset Pricing
+        Basic Concepts
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Asset Pricing" data-md-level="3">
+      <nav class="md-nav" aria-label="Basic Concepts" data-md-level="3">
         <label class="md-nav__title" for="__nav_5_3_2">
           <span class="md-nav__icon md-icon"></span>
-          Asset Pricing
+          Basic Concepts
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -3238,8 +3265,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Asset%20Pricing/" class="md-nav__link">
-        Asset Pricing
+      <a href="../../Basic%20Concepts/Basic%20Concepts/" class="md-nav__link">
+        Basic Concepts
       </a>
     </li>
   
@@ -3353,6 +3380,13 @@
         <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-prior" class="md-nav__link">
+    The Prior
   </a>
   
 </li>
@@ -3814,6 +3848,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-prior" class="md-nav__link">
+    The Prior
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3829,9 +3870,9 @@
                 
                 <h1 id="black-litterman-allocation">Black-Litterman Allocation</h1>
 <h2 id="introduction">Introduction</h2>
-<p>The Black-Litterman is a model for portfolio allocation developed in 1990 at Goldman Sachs by Fischer Black and Robert Litterman.</p>
-<p>The model tries to solve a problem with Modern Portfolio Theory (MPT, the mean-variance approach of Markowitz): although the covariances of a few assets can be adequately estimated, it is difficult to come up with reasonable estimates of <em>expected returns</em>.</p>
-<p>In general, when there are portfolio constraints - for example, when short sales are not allowed - the easiest way to find the optimal portfolio is to use the Black–Litterman model to generate the expected returns for the assets, and then use a mean-variance optimizer to solve the constrained optimization problem.</p>
+<p>The Black-Litterman is a model for portfolio allocation developed in 1990 at Goldman Sachs by Fischer Black and Robert Litterman. The model tries to solve the problems with the Modern Portfolio Theory (MPT, the mean-variance approach of Markowitz), essentially with the generalization ability of the model. This is the motivation behind the Bayesian treatment of the Black-Litterman model.</p>
+<h2 id="the-prior">The Prior</h2>
+<p>The model uses market equilibrium returns as the prior, which are obtained by holding a CAPM market portfolio - one which theoretically contains all assets in the universe.</p>
                 
               
               
