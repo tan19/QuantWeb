@@ -38,13 +38,15 @@ DFS searches a tree or graph as far as possible along each branch before backtra
     ```
 
 ## Problems
-| ID  | Title | Difficulty |
+| ID   | Title | Difficulty |
 ||||
-| 695 | Max Area of Island | Medium|
-| 200 | Number of Islands | Medium|
+| 695  | Max Area of Island | Medium|
+| 200  | Number of Islands | Medium|
+| 1254 | Number of Closed Islands | Medium|
 
 {% include "LC695.md" %}
 {% include "LC200.md" %}
+{% include "LC1254.md" %}
 
 == 基础知识：
 常见的DFS用来解决什么问题？(1) 图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度（2）排列组合（3） 遍历一个图（或者树）（4）找出图或者树中符合题目要求的全部方案
