@@ -101,11 +101,70 @@ The portfolio optimization problem, seeking optimal weight $\w$, can be formulat
 
 
 ## Problem C: maximize portfolio return given required risk
-!!! Problem "Problem B: maximize portfolio return given required risk"
+!!! Problem "Problem C: maximize portfolio return given required risk"
     \begin{align*}
-    &\max_\w \w^T\bmu \\
-    s.t.~ &\w^T\bSigma\w = \Sigma_0^2 \mbox{ and } \w^T\w = 1
+    &\max_\w \bmu^T\w \\
+    s.t.~ &\w^T\bSigma\w = \sigma_0^2 \mbox{ and } \1^T\w = 1
     \end{align*}
 
     where $\mu_0$ is the required rate of return. 
 
+???+ Done "Solution C: maximize portfolio return given required risk"    
+    Optimizing the Lagrangian function
+
+    \begin{align*}
+        f(\lambda_0, \lambda_1, \w) = \w^T\bmu - \frac12 \lambda_0 (\w^T\bSigma\w - \sigma_0^2) - \lambda_1 (\1^T\w - 1)
+    \end{align*}
+
+    gives us
+
+    \begin{align}
+        \bmu - \lambda_0\bSigma\w - \lambda_1 \1 = \0 \implies \w = \frac{\bSigma^{-1}(\bmu - \lambda_1\1)}{\lambda_0} \label{eq:2}
+    \end{align}
+
+
+    Plug in $\w$ into the two constraint equations we obtain    
+
+    \begin{align}
+    \begin{cases}
+        (\frac{\bSigma^{-1}(\bmu - \lambda_1\1)}{\lambda_0})^T\bSigma(\frac{\bSigma^{-1}(\bmu - \lambda_1\1)}{\lambda_0}) &= \sigma_0^2 \\
+        \1^T\frac{\bSigma^{-1}(\bmu - \lambda_1\1)}{\lambda_0} &= 1
+    \end{cases}
+    \implies
+    \begin{cases}
+        (\bmu - \lambda_1\1)^T\bSigma^{-1}(\bmu - \lambda_1\1) &= \lambda_0^2\sigma_0^2 \label{eq:3} \\
+        \1^T\bSigma^{-1}(\bmu - \lambda_1\1) &= \lambda_0 
+    \end{cases} 
+    \end{align}
+
+    Let
+
+    \begin{align*}
+    \begin{cases}
+        a & = \mu^T\bSigma^{-1}\mu\\
+        b & = \mu^T\bSigma^{-1}\1\\
+        c & = \1^T\bSigma^{-1}\1
+    \end{cases}
+    \implies
+    (\sigma_0^2 c^2 + c)\lambda_1^2 + 2(\sigma_0^2 c - b)\lambda_1 + (a - \sigma_0^2 b^2) = 0
+    \end{align*}
+
+    With
+
+    \begin{align*}
+    \begin{cases}
+        A & = \sigma_0^2 c^2 + c\\
+        B & = 2(\sigma_0^2 c - b)\\
+        C & = a - \sigma_0^2 b^2\1
+    \end{cases}
+    \implies        
+    \lambda_1 &= \frac{-B \pm \sqrt{B^2 - 4AC}}{2A}
+    \end{align*}
+    
+    Substitute $\lambda_1$ into the second equation in Equation ($\ref{eq:3}$) to get $\lambda_0$, 
+    and finally $\w$ can be calculated using $\lambda_0$ and $\lambda_1$ with Equation ($\ref{eq:2}$).
+
+
+##Appendix:
+
+[1] [www.portfoliovisualizer.com](https://www.portfoliovisualizer.com/)
