@@ -3383,6 +3383,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#appendix" class="md-nav__link">
+    Appendix:
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3842,6 +3849,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#appendix" class="md-nav__link">
+    Appendix:
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3935,13 +3949,58 @@ s.t.~ &amp;\bmu^T\w = \mu_0 \mbox{ and } \1^T\w = 1
 </details>
 <h2 id="problem-c-maximize-portfolio-return-given-required-risk">Problem C: maximize portfolio return given required risk</h2>
 <div class="admonition problem">
-<p class="admonition-title">Problem B: maximize portfolio return given required risk</p>
+<p class="admonition-title">Problem C: maximize portfolio return given required risk</p>
 <div class="arithmatex">\[\begin{align*}
-&amp;\max_\w \w^T\bmu \\
-s.t.~ &amp;\w^T\bSigma\w = \Sigma_0^2 \mbox{ and } \w^T\w = 1
+&amp;\max_\w \bmu^T\w \\
+s.t.~ &amp;\w^T\bSigma\w = \sigma_0^2 \mbox{ and } \1^T\w = 1
 \end{align*}\]</div>
 <p>where <span class="arithmatex">\(\mu_0\)</span> is the required rate of return. </p>
 </div>
+<details class="done" open="open"><summary>Solution C: maximize portfolio return given required risk</summary><p>Optimizing the Lagrangian function</p>
+<div class="arithmatex">\[\begin{align*}
+    f(\lambda_0, \lambda_1, \w) = \w^T\bmu - \frac12 \lambda_0 (\w^T\bSigma\w - \sigma_0^2) - \lambda_1 (\1^T\w - 1)
+\end{align*}\]</div>
+<p>gives us</p>
+<div class="arithmatex">\[\begin{align}
+    \bmu - \lambda_0\bSigma\w - \lambda_1 \1 = \0 \implies \w = \frac{\bSigma^{-1}(\bmu - \lambda_1\1)}{\lambda_0} \label{eq:2}
+\end{align}\]</div>
+<p>Plug in <span class="arithmatex">\(\w\)</span> into the two constraint equations we obtain    </p>
+<div class="arithmatex">\[\begin{align}
+\begin{cases}
+    (\frac{\bSigma^{-1}(\bmu - \lambda_1\1)}{\lambda_0})^T\bSigma(\frac{\bSigma^{-1}(\bmu - \lambda_1\1)}{\lambda_0}) &amp;= \sigma_0^2 \\
+    \1^T\frac{\bSigma^{-1}(\bmu - \lambda_1\1)}{\lambda_0} &amp;= 1
+\end{cases}
+\implies
+\begin{cases}
+    (\bmu - \lambda_1\1)^T\bSigma^{-1}(\bmu - \lambda_1\1) &amp;= \lambda_0^2\sigma_0^2 \label{eq:3} \\
+    \1^T\bSigma^{-1}(\bmu - \lambda_1\1) &amp;= \lambda_0 
+\end{cases} 
+\end{align}\]</div>
+<p>Let</p>
+<div class="arithmatex">\[\begin{align*}
+\begin{cases}
+    a &amp; = \mu^T\bSigma^{-1}\mu\\
+    b &amp; = \mu^T\bSigma^{-1}\1\\
+    c &amp; = \1^T\bSigma^{-1}\1
+\end{cases}
+\implies
+(\sigma_0^2 c^2 + c)\lambda_1^2 + 2(\sigma_0^2 c - b)\lambda_1 + (a - \sigma_0^2 b^2) = 0
+\end{align*}\]</div>
+<p>With</p>
+<div class="arithmatex">\[\begin{align*}
+\begin{cases}
+    A &amp; = \sigma_0^2 c^2 + c\\
+    B &amp; = 2(\sigma_0^2 c - b)\\
+    C &amp; = a - \sigma_0^2 b^2\1
+\end{cases}
+\implies        
+\lambda_1 &amp;= \frac{-B \pm \sqrt{B^2 - 4AC}}{2A}
+\end{align*}\]</div>
+<p>Substitute <span class="arithmatex">\(\lambda_1\)</span> into the second equation in Equation (<span class="arithmatex">\(\ref{eq:3}\)</span>) to get <span class="arithmatex">\(\lambda_0\)</span>, 
+and finally <span class="arithmatex">\(\w\)</span> can be calculated using <span class="arithmatex">\(\lambda_0\)</span> and <span class="arithmatex">\(\lambda_1\)</span> with Equation (<span class="arithmatex">\(\ref{eq:2}\)</span>).</p>
+</details>
+<h2 id="appendix">Appendix:</h2>
+<p>[1] <a href="https://www.portfoliovisualizer.com/">www.portfoliovisualizer.com</a></p>
                 
               
               
