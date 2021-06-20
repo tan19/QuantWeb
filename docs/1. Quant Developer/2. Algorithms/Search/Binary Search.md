@@ -1,4 +1,4 @@
-# Binary Search (3)
+# Binary Search (4)
 
 ## Introduction
 
@@ -66,7 +66,14 @@ Binary search is an algorithm that finds a target number in a **sorted** array i
     ``` Java 
     ```  
 
-## Problems (0, 3, 0)
+## Problems
+| ID   | Title | Difficulty |
+||||
+| 704  | Binary Search | Medium|
+| 1011  | Capacity To Ship Packages Within D Days | Medium|
+| 1642 | Furthest Building You Can Reach | Medium|
+| 34 | Find First and Last Position of Element in Sorted Array | Medium|
+
 {% include "LC704.md" %}
 {% include "LC1011.md" %}
 {% include "LC1642.md" %}

@@ -1,4 +1,4 @@
-# DFS
+# DFS (4)
 
 ## Introduction
 DFS searches a tree or graph as far as possible along each branch before backtracking. The time complexity is $O(|V| + |E|)$, where $|V|$ is the number of vertices and $|E|$ the number of edges; and the space complexity is $O(|V|)$. The pseudocode can be written as follows:
@@ -50,11 +50,6 @@ DFS searches a tree or graph as far as possible along each branch before backtra
 {% include "LC1254.md" %}
 {% include "LC1034.md" %}
 
-== 基础知识：
-常见的DFS用来解决什么问题？(1) 图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度（2）排列组合（3） 遍历一个图（或者树）（4）找出图或者树中符合题目要求的全部方案
-DFS基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
-除了遍历之外多数情况下时间复杂度是指数级别，一般是O(方案数×找到每个方案的时间复杂度)
-递归题目都可以用非递归迭代的方法写，但一般实现起来非常麻烦
 
 == 基于树的DFS：需要记住递归写前序中序后序遍历二叉树的模板
 - LeetCode 543 Diameter of Binary Tree
