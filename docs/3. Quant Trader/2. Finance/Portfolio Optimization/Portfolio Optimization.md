@@ -163,3 +163,8 @@ The portfolio optimization problem, seeking optimal weight $\w$, can be formulat
     
     Substitute $\lambda_1$ into the second equation in Equation ($\ref{eq:3}$) to get $\lambda_0$, 
     and finally $\w$ can be calculated using $\lambda_0$ and $\lambda_1$ with Equation ($\ref{eq:2}$).
+
+
+##Appendix:
+
+[1] [www.portfoliovisualizer.com](https://www.portfoliovisualizer.com/)
