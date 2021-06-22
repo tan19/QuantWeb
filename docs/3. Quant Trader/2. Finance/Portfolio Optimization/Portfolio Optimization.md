@@ -1,5 +1,4 @@
 # Portfolio Optimization
-
 ## Introduction
 For a long time, investors believed that if they want higher returns, they would have to take higher risk. This assumption was challenged by Harry Markowitz. In 1952, he introduced the **Modern Portfolio Theory (MPT)**, which stated that it is possible to obtain higher returns while at the same time reduce the risk, through diversification. This work eventually earned him a Nobel price in 1990.
 

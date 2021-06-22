@@ -65,6 +65,7 @@ window.MathJax = {
       y: "\\boldsymbol{y}",
       0: "\\boldsymbol{0}",
       1: "\\boldsymbol{1}",
+      bLambda: "\\boldsymbol{\\Lambda}",
       bSigma: "\\boldsymbol{\\Sigma}",
       bmu: "\\boldsymbol{\\mu}",
       bsigma: "\\boldsymbol{\\sigma}",
@@ -72,9 +73,11 @@ window.MathJax = {
       bepsilon: "\\boldsymbol{\\epsilon}",
       EEE: "\\mathbb{E}",
       RRR: "\\mathbb{R}",
+      PPP: "\\mathbb{P}",
       QQQ: "\\mathbb{Q}",
+      NN: "\\mathcal{N}",
       AA: "\\mathcal{A}",
-      Var: "\\mbox{Var}",      
+      Var: "\\mbox{Var}",            
       Trace: "\\mbox{Trace}",
       bm: ["\\boldsymbol #1", 1]
     }
