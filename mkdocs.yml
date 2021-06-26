@@ -10,7 +10,7 @@ theme:
 
 plugins:  
   - macros:
-      include_dir: "LeetCode"
+      include_dir: "docs/LeetCode/_LeetCodeSol"
 
 markdown_extensions: 
   - meta
