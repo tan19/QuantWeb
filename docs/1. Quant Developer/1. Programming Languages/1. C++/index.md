@@ -1,5 +1,12 @@
 # Index
 
+Objects can be created in the stack or heap, depending on whether or not it involves pointer usage. Java usually places objects directly into heaps, while C++ compiler often check and try to optimize.
+
+global \emph{and static} variables are allocated into data segment. functions are compiled into code segment.
+Data is allocated into stack frame.
+
+Stack allocation is much faster since all it really does is move the stack pointer. Using memory pools, you can get comparable performance out of heap allocation, but that comes with a slight added complexity and its own headaches. Also, stack vs. heap is not only a performance consideration; it also tells you a lot about the expected lifetime of objects.
+
 ## Books
 
 <img src="fig/CPPP5.jpg" style="float: left; height: 5cm; width: 4.1cm; margin-right: 1%; margin-bottom: 1%;">

@@ -1,5 +1,40 @@
 # Option P&L Attributions
 
+Suppose the underlier has the following dynamics:
+\begin{align}
+	\frac{dS}{S} = (\mu - q) dt + \sigma dW_t
+\end{align}
+and then the dynamics of the exotics $V(S,t)$ reads:
+\begin{align}
+	dV(S,t) = \frac{\partial V}{\partial S}dS + \frac{\partial V}{\partial t} dt + \frac12 \frac{\partial^2 V}{\partial S^2} \sigma^2 S^2 dt
+\end{align}
+If we construct a arbitrage free portfolio by dynamically hedging (shorting) the position we long, we have:
+\begin{align}
+	d\left[V(S,t) - \frac{\partial V}{\partial S}S\right] = \left[\frac{\partial V}{\partial t} + \frac12 \frac{\partial^2 V}{\partial S^2} \sigma^2 S^2 \right]dt \equiv \left[rV  - (r-q)\frac{\partial V}{\partial S}S\right]dt
+\end{align}
+where the LHS is the payoff of the hedged portfolio and the RHS is the interest accrued, i.e., we are paying the funds we borrowed from the money market $V$ when we bought the exotics and we are earning $r-q$ on the $\partial V /\partial S$ shares we short, where $q$ is the broker's liquidity charge in the repo market. Finally, matching the LHS and RHS we obtain:
+\begin{align}
+	\frac{\partial V}{\partial t} + \frac12 \frac{\partial^2 V}{\partial S^2} \sigma^2 S^2 = rV - (r-q) \frac{\partial V}{\partial S} S
+\end{align}
+This is the well-known ``Black--Scholes'' PDE
+
+
+\subsection{Geometric Brownian Motion}\index{Geometric Brownian Motion}
+The solution to the following SDE
+\begin{align}
+	\frac{dS}{S} = r dt + \sigma dW_t
+\end{align}
+is
+\begin{align}
+	S_t = S_0 e^{(r - \frac12 \sigma^2)t + \sigma W_t}
+\end{align}
+which is well-known ``Geometric Brownian Motion''. The expectation is 
+\begin{align}
+	\EEE[S_t] = S_0 e^{rt}
+\end{align}
+
+
+
 Consider at time 0 that, the bank sells an option $P$ and at the same time long $\Delta$ shares of the underlying stock $S$ to setup a delta-hedged position:
 
 \begin{align}

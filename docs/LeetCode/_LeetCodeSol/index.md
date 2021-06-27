@@ -4,6 +4,13 @@ hide:
 ---
 # Index
 
+Ask yourself:
+- Can I sort the array first?
+- Can I compute the presum (both direction) first?
+- Does a pre-dictionary help?
+- Can I solve it using recursive function calls?
+
+
 Algorithm design is mainly about **how to reduce problem size and to avoid repetitive computation**. The search part of the algorithm is usually DFS (Depth First Search), through recursive function calls or stack simulation; or BFS (Breadth First Search), through for and while loops or simulated by a queue. These two are often exchangeable and are a trivial decision once the algorithm design is done.
 
 The algorithm design can be seen as to search in a **data structure**, which can be visualized as a graph, where
@@ -19,7 +26,7 @@ Common Preprocessing Tricks
 - PreSum
 
 
-## Problems (13)
+## Problems (15)
 ### Binary Search (4)
 | Problem | Type | Info | Data Structure | Algorithm |
 ||||||
@@ -36,6 +43,21 @@ Common Preprocessing Tricks
 | [LC560. Subarray Sum Equals K](LC560) | 1D Structured FindAll | PreSum | No | No |
 | [LC713. Subarray Product Less Than K](LC713) | 1D Structured FindAll | PreSum | No | No |
 
+### Subarrays and Subsequences (1)
+| Problem | Type | Info | Data Structure | Algorithm |
+||||||
+| [LC53. Maximum Subarray](LC53) | 1D Structured FindAll | No | No | DP |
+| [LC560. Subarray Sum Equals K](LC560) | 1D Structured FindAll | No | No | DP |
+| [LC523. Subarray Sums Divisible by K](LC523) | 1D Structured FindAll | No | No | DP |
+| [LC974. Subarray Sums Divisible by K](LC974) | 1D Structured FindAll | No | No | DP |
+| [LC491. Increasing Subsequences](LC491) | 1D Structured FindAll | No | No | DP |
+
+
+### Tree (2)
+| Problem | Type | Info | Data Structure | Algorithm |
+||||||
+| [LC1448. Count Good Nodes in Binary Tree](LC1448) | 2D Structured FindAll | PreSum | No | DFS |
+| [LC508. Most Frequent Subtree Sum](LC508) | 2D Structured FindAll | Dictionary | No | DFS |
 
 ### DFS (5)
 | Problem | Type | Preprocess | Info | Data Structure | Algorithm |

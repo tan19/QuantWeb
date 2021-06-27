@@ -1,4 +1,47 @@
 # Regression
+\chapter{Regression Models}
+
+Generalized linear models include as special cases,  linear regression and analysis-of-variance models, logit and probit models for quantal responses, log linear models and multinomial response models for counts and some commonly used models for survival data.
+
+The second-order properties of the parameter estimates are insensitive to the assumed distributional form: the second-order properties depend mainly on the assumed variance-to-mean relationship and on uncorrelatedness or independence.
+
+\section{Logistic Regression}
+Generalized linear model (GLiM) is a generalization of the general linear regression model (GLM) where the response variable can have error distributions other than a normal, this is achieved by assuring:
+\begin{enumerate}
+	\item the response variable and the explanatory variable are related via a \emph{link function}, and
+	\item the variance of each observation is a function of its predicted value.
+\end{enumerate}
+Usually, \emph{iteratively reweighted least squares} is used for the MLE estimation.
+
+\index{logistic regression}\label{model: logistic regression}
+The \emph{logit function}\index{logit function} is defined as:
+\begin{align}
+	logit(p) = \log\left(\frac{p}{1-p}\right)
+\end{align}
+The inverse of a logit function is called the \emph{logistic function}\index{logistic function}, an important special case of sigmoid functions, a family of functions that are ``S''-shaped. It is defined as:
+\begin{align}
+	\sigma(t) := \frac{1}{1+e^{-t}},\quad t \in \RRR
+\end{align}
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[scale=0.5]{logisticfunction}
+ \caption{logistic function}
+\end{figure}
+
+
+For binary classification, we can rewrite
+\begin{align}
+	P_{\W}(\CC = 1 | \x) &:= \sigma((\w_1-\w_2)^T\x)\\
+	&= \frac{1}{1+\exp(-(\w_1-\w_2)^T\x)}\\
+	&= \frac{\exp(\w_1^T\x)}{\exp(\w_1^T\x)+\exp(\w_2^T\x)}
+\end{align}
+where the class weight matrix $\W$ has two columns $\w_1$ and $\w_2$, the weight vector for class $1$ and $2$, respectively. The \index{softmax function} generalizes the logistic function to multiple classes:
+\begin{align}
+	P_{\W}(\CC = i | \x) &:= \frac{\exp(\w_i^T\x)}{\sum_{k=1}^K\exp(\w_k^T\x)}
+\end{align}
+where $\W$ has $K$ columns, each of which is the corresponding weight vector.
+
 
 ## Model
 
