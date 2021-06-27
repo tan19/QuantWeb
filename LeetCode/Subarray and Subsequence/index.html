@@ -16,7 +16,7 @@
     
     
       
-        <title>Subarray - A Stroll Through the Brambles of Quant Finance</title>
+        <title>Subarray and Subsequence - A Stroll Through the Brambles of Quant Finance</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#subarray" class="md-skip">
+        <a href="#subarray-and-subsequence" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Subarray
+              Subarray and Subsequence
             
           </span>
         </div>
@@ -3424,12 +3424,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Subarray
+          Subarray and Subsequence
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Subarray
+        Subarray and Subsequence
       </a>
       
         
@@ -3485,6 +3485,13 @@
           <li class="md-nav__item">
   <a href="#lc713-subarray-product-less-than-k-medium" class="md-nav__link">
     LC713. Subarray Product Less Than K (Medium)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#491-increasing-subsequences-medium" class="md-nav__link">
+    491. Increasing Subsequences (Medium)
   </a>
   
 </li>
@@ -4149,6 +4156,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../_LeetCodeSol/LC491/" class="md-nav__link">
+        LC491
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../_LeetCodeSol/LC508/" class="md-nav__link">
         LC508
       </a>
@@ -4362,6 +4381,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#491-increasing-subsequences-medium" class="md-nav__link">
+    491. Increasing Subsequences (Medium)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4380,10 +4406,10 @@
               
                 
                 
-                <h1 id="subarray">Subarray</h1>
+                <h1 id="subarray-and-subsequence">Subarray and Subsequence</h1>
 <div class="admonition introduction">
 <p class="admonition-title">Introduction</p>
-<p>It is often times prohibitively costly to check <strong>all</strong> subarrays, which is of order <span class="arithmatex">\(O(n^2)\)</span>, not to mention all subsequences, which is of order <span class="arithmatex">\(O(2^n)\)</span>. Thus, the common algorithm for this type of problem is to use a <strong>structured DP</strong> scheme, that is, </p>
+<p>It is oftentimes prohibitively costly to check <strong>all</strong> subarrays, which is of order <span class="arithmatex">\(O(n^2)\)</span>, not to mention all subsequences, which is of order <span class="arithmatex">\(O(2^n)\)</span>. Thus, the common algorithm for this type of problem is to use a <strong>structured DP</strong> scheme, that is, </p>
 <ul>
 <li>the problem is solved <strong>on-the-fly</strong> in a DP fashion, and</li>
 <li>the <strong>carry-on info</strong> is intentionally structured.</li>
@@ -4407,7 +4433,7 @@
 <p class="admonition-title">Level III. Track a Sorted Array</p>
 <p><span style="color:green">In the previous examples, we can track a hash table of information because the problem imposes an </span><span style="color:red"><strong>equality constraint</strong></span><span style="color:green">, meaning the solution of the current step must come from </span><span style="color:red"><strong>one of the solutions from previous steps.</strong></span><span style="color:green">
 </span></p>
-<p>However, as in <a href="https://leetcode-cn.com/problems/subarray-product-less-than-k/" target="_blank">LC713. Subarray Product Less Than K (Medium)</a>, where we are asked to find all subarrays whose product is <strong>less than <span class="arithmatex">\(k\)</span></strong>.</p>
+<p>However, as in <a href="https://leetcode-cn.com/problems/subarray-product-less-than-k/" target="_blank">LC713. Subarray Product Less Than K (Medium)</a>, where we are asked to find all subarrays whose product is <strong>less than <span class="arithmatex">\(k\)</span></strong>, and in <a href="https://leetcode-cn.com/problems/increasing-subsequences/" target="_blank">LC491. Increasing Subsequences (Medium)</a>, where we are asked to find all non-decreasing <strong>subsequences</strong>.</p>
 <p>The trick for this type of problem is to keep <strong>a sorted array of info</strong>.</p>
 </div>
 <h2 id="related-problems">Related Problems</h2>
@@ -4451,7 +4477,7 @@
 <td>DP</td>
 </tr>
 <tr>
-<td><a href="LC713">LC713. Subarray Product Less Than K</a></td>
+<td><a href="LC491">LC491. Increasing Subsequences</a></td>
 <td>1D Structured FindAll</td>
 <td>No</td>
 <td>No</td>
@@ -4714,6 +4740,68 @@
                 <span class="n">ans</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">prodList</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">ans</span>                    
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="491-increasing-subsequences-medium">491. Increasing Subsequences (Medium)</h3>
+<details class="note" open="open"><summary>LC491. Increasing Subsequences (Medium)</summary><div class="tabbed-set" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">Info</label><div class="tabbed-content">
+<ul>
+<li><strong><a href="https://leetcode-cn.com/problems/increasing-subsequences/" target="_blank">491. Increasing Subsequences (Medium)</a></strong></li>
+<li>Algorithm: PreSum</li>
+<li>Time Complexity: <span class="arithmatex">\(O(n)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(1)\)</span></li>
+</ul>
+</div>
+<input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><label for="__tabbed_11_2">Solution</label><div class="tabbed-content">
+<p>PreSum.</p>
+</div>
+<input id="__tabbed_11_3" name="__tabbed_11" type="radio" /><label for="__tabbed_11_3">PreSum <span class="arithmatex">\(O(n)\)</span></label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="12:1"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><label for="__tabbed_12_1">Python</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">findSubsequences</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+
+        <span class="n">DP</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]]]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">))]</span>
+        <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+            <span class="n">DP</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="p">[[</span><span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">]]]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>            
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">nums</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">DP</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="p">[</span><span class="n">x</span> <span class="o">+</span> <span class="p">[</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">DP</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span>
+
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">DP</span><span class="p">:</span>         
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>   
+                    <span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>                    
 </code></pre></div>
 </td></tr></table>
 </div>
