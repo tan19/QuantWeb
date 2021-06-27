@@ -1,5 +1,198 @@
 # Basics of Machine Learning
 
+\begin{question}{Hyper-parameter Tuning}{$\star$}{Machine Learning; Hyper-parameter}
+What are the common hyper-parameter tuning methods?
+\end{question}
+
+\section{Bias-Variance Tradeoff}
+A model can be thought of as a statistic (i.e., a function of samples), hence it has a sampling distribution with its mean and variance. The error between the mean (i.e., average model prediction) and the ground truth is called \emph{bias}, while the average variability in the model prediction is called \emph{variance}, which tells you how much the model changes as the data are sampled repeatedly. Mathematically,
+\begin{align*}
+	\mbox{Bias} &= \EEE[\hat{f}(x)] - f(x)\\
+	\mbox{Variance} &= \mbox{Var}[\hat{f}(x)]
+\end{align*}
+The mean square error can then be decomposed into three terms:
+\begin{align}	
+	\mbox{Error} &\equiv \EEE[(\hat{f}(x) - f(x))^2] \\ \nonumber
+	&= (\EEE[\hat{f}(x)-f(x)])^2 + \mbox{Var}[\hat{f}(x) - f(x)]\\ \nonumber
+	&= (\EEE[\hat{f}(x)-f(x)])^2 + \mbox{Var}[\hat{f}(x)] + \mbox{Var}[f(x)] \\ \nonumber
+	&= \mbox{Bias}^2 + \mbox{Variance} + \mbox{Ground Truth Error}
+\end{align}
+The immediate consequences of the above are that 1) increased data size does not help the bias term, 2) but it does help the variance term, and 3) the ground truth error, which comes from the population, is irreducible. One way to resolve this issue is to use mixture models and/or ensemble methods (read Section \ref{sec:Ensemble_Methods} for more details). See Questions (e.g., \ref{q:Bias-Variance Tradeoff}) for the topic of this section.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{Bias-Variance-Tradeoff.jpg}
+\caption{Bias-Variance Tradeoff.}
+\end{figure}
+
+\section{Bayesian vs Frequentist}
+Suppose \emph{under the null hypothesis} (which may or may not be true), the sample random variable $\X$ follows the distribution $P(\X|\bTheta)$, which is parameterized by $\bTheta$. To learn about $\bTheta$ under this null hypothesis, we draw a fix-sized sample of i.i.d. observations from the population, large enough to be representative:
+\begin{align*}
+\x_0 \equiv \X(\omega_0) = \{X_1(\omega_0), \cdots, X_n(\omega_0)\}
+\end{align*}
+This particular observed sample $\x$, which is of course random in nature, however draws two fundamentally different schools of interpretations.
+
+\subsection{Frequentist View}
+The \emph{Frequentist view} is that:
+
+\vspace{0.5cm}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+        The randomness of the sample $\X$ only comes from the sampling procedure, not the fixed but unknown parameter $\bTheta$.
+    }%
+}
+\vspace{0.3cm}
+
+\noindent
+Hence it makes sense to state $P(0 \le \hat{\theta} \le 1) = 0.5$ but not the case for $P(0 \le \theta \le 1) = 0.5$, because $\hat{\theta}$ is a random variable which has a sampling distribution whereas $\theta$ is a fixed but unknown constant, i.e., it is either $P(0 \le \theta \le 1) = 1$ or $P(0 \le \theta \le 1) = 0$.
+
+To learn the \emph{unknown constant} parameter $\bTheta$, Frequentists propose to maximize the likelihood function (MLE), which is the parameter perspective of the observations' joint distribution (usually not a valid probability distribution, hence the name ``function''):
+\begin{align*}
+	\hat{\bTheta}_{MLE} = \mbox{argmax}_\bTheta ~ L(\bTheta; \X = \x_0) = \mbox{argmax}_\bTheta ~ P(\X = \x_0|\bTheta)
+\end{align*}
+
+\subsection{Bayesian View}
+The Bayesian view, however, is hierarchical in nature:
+
+\vspace{0.5cm}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+        The randomness of the sample $\X$ comes from the local distributions \emph{and} their local parameters, which themselves are random variables.
+    }%
+}
+\vspace{0.3cm}
+
+Just imagine that we want to measure the average height of all the population in the world. Frequentists have a \emph{grand population distribution} while Bayesians have a collection of \emph{local distributions} with their own parameters for each and every ``household'', which may or may not come from the same family of distributions let alone the Frequentist grand population distribution. Usually, however, for computational and modeling convenience, these local distributions are assumed to be within the same distribution family, e.g., exponential family, and their common and shared parameters are governed by the corresponding prior distributions.
+
+To learn the \emph{random variable} parameter $\bTheta$, Bayesians propose to maximize the aposteriori probability (MAP), which is the posterior distribution of the parameter given the observed data:
+\begin{align*}
+	\hat{\bTheta}_{MAP} &= \mbox{argmax}_\bTheta ~ P(\bTheta | \X = \x_0) \\
+	&= \mbox{argmax}_\bTheta ~ \frac{P(\X = \x_0 | \bTheta) P(\bTheta)}{P(\X = \x_0)}\\
+	&= \mbox{argmax}_\bTheta ~ P(\X = \x_0|\bTheta) P(\bTheta)
+\end{align*}
+where $P(\X = \x_0)$ is called the ``evidence'', $P(\bTheta)$ the ``prior'', and $P(\X = \x_0 | \bTheta)$ the ``likelihood''. See Questions (e.g., \ref{q:Bayesian vs Frequentist}) for the topic of this section.
+
+
+\section{Exponential Family}
+\begin{align}
+	f(y|\theta,\phi) & = \exp \left\{ \frac{y\theta-b(\theta)}{a(\phi)}+c(y,\phi) \right\} \\
+	E(y) & = b'(\theta) \\
+	Var(y) & = b''(\theta)a(\phi)
+\end{align}
+
+\section{Overview}
+There are two main types of Machine Learning problems: the {\bf{predictive}} or {\bf{supervised learning}}, and the {\bf{descriptive}} or {\bf{unsupervised learning}} \footnote{It is also called {\bf{Knowledge Discovery}} in the Data Mining literature}.
+
+For supervised learning, there are two subtypes: the {\bf{classification}} problem, where the response variable is categorical (either ordinal or nomial); and the {\bf{regression}} problem, where the response variable is numerical (either discrete or continuous).
+
+For unsupervised learning, it is also called {\bf{density estimation}} in Statistics literature. Essentially we want to build models of the form $p(\x_i|\theta)$, and supervised learning can be seen as to build models of the form $p(y_i|\x_i,\theta)$, which is a problem of conditional density estimation. \footnote{We see from the formulation that, unsupervised learning usually involves multivariate probability models while supervised learning usually involves univariate probability models.}
+
+
+\subsection{Some Distinctions}
+\subsection{Machine Learning v.s. Statistical Learning}
+{\bf{Machine Learning}} focuses more on high dimension low noise situations, and performance and efficiency are the main concerns. {\bf{Statistical Learning}} focuses more on low dimension high noise situations, interpretation and statistical inference are the main concerns.
+\subsubsection{Parametric v.s. Non-parametric Models}
+A parametric model has a fixed {\em{finite}} number of parameters, while the number of parameters in a non-parametric model grows with the amount of training data. A model with infinite number of parameters is usually non-parametric.
+
+\subsection{A Brief History of Machine Learning}
+The perceptron model was invented in 1957, and it generated over optimistic view for AI during 1960s. After Marvin Minsky pointed out the limitation of this model in expressing complex functions, researchers stopped pursuing this model for the next decade.
+
+In 1970s, the machine learning field was dormant, when expert systems became the mainstream approach in AI.  The revival of machine learning came in mid-1980s, when the decision tree model was invented and distributed as software. It is also in mid 1980s multi-layer neural networks were invented, With enough hidden layers, a neural network can express any function, thus overcoming the limitation of perceptron. We see a revival of the neural network study.
+
+Around 1995, SVM was proposed and have become quickly adopted.
+
+After year 2000, Logistic regression was rediscovered and re-designed for large scale machine learning problems . In the ten years following 2003, logistic regression has attracted a lot of research work.
+
+We discussed the development of 4 major machine learning methods. There are other method developed in parallel, but see declining use today in the machine field: Naive Bayes, Bayesian networks, and Maximum Entropy classifier (most used in natural language processing).
+
+In addition to the individual methods, we have seen the invention of ensemble learning, where several classifiers are used together, and its wide adoption today.
+
+
+\url{http://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence}
+
+1950s-1960s: the Perceptron Model
+1970s-1980s: the Expert Systems
+mid 1980s: Multi-layer Neural Networks
+1995: SVM
+2000s: Logistic Regression Rediscovered
+
+
+
+\subsection{Regression v.s. Classification}
+Consider a supervised learning problem in which we wish to approximate an unknown target function $f: \XX \to \YY$, or equivalently $P(Y|X)$. One way to learn $P(Y|X)$ is to use the training data to estimate $P(X|Y)$ and $P(Y)$, and then use Bayes rule to determine $P(Y|X)$.
+\subsection{Parametric v.s. Nonparametric Models}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{| l | l | l | l | l |}
+\hline
+\bf{Model} & \bf{Supervised} & \bf{Generative} & \bf{Advantages} & \bf{Disadvantages} \\\hline
+Naive Bayes & Yes & ? & & \\\hline
+\end{tabular}
+\caption{Model comparison.}
+\end{table}
+
+
+\input{Ensemble}
+
+\section{Statistical Learning Theory}
+Statistical learning theory studies the properties, in particular error-bounds, of learning algorithms in a statistical framework.
+
+The No Free Lunch theorem says, if no assumptions about how training data are related to the testing data, prediction is impossible; furthermore, if no assumptions about the data to be expected, generalization is impossible.
+
+Simply means we need to make the assumption that there is a stationary distribution of data.
+
+\deff{
+	Suppose $f: \RRR \to \RRR_+$ and $g: \RRR \to \RRR_+$, we write
+	\begin{align}
+		f = O(g)		
+	\end{align}	
+	if there exists $x_0, \alpha \in \RRR_+$ such that for all $x > x_0$ we have $f(x) \le \alpha g(x)$. Replacing $\le$ with $\ge$, we write $f = \Omega(g)$.
+}
+
+\deff{
+	Suppose $f: \RRR \to \RRR_+$ and $g: \RRR \to \RRR_+$, we write
+	\begin{align}
+		f = o(g)
+	\end{align}	
+	if for every $\alpha > 0$ there exists $x_0$ such that for all $x > x_0$ we have $f(x) \le \alpha g(x)$. Replacing $\le$ with $\ge$, we write $f = \omega(g)$.
+}
+
+\deff{
+	If $f = O(g)$ and $f = \Omega(g)$, then we write $f = \Theta(g)$.
+}
+
+\deff{
+	We write $f = \tilde O(g)$ if there exists $k \in \NNN$ such that $f(x) = O(g(x)\log^k(g(x)))$.
+}
+
+\section{Parametric and nonparametric models}
+In a set of probability spaces $\{(\YY, \FF, \PP_\Theta)\}$, a {\em{statistical model}} $\MM$ on a sample space $\YY$ is {\underline{a set of probability measures}} $\PP_\Theta$ on $\YY$. If we write $PM(\YY)$ for the space of all probability measure on $\YY$, a model is a subset $\MM \subset PM(\YY)$. Every element of $\MM$ has a one-to-one mapping (hence the model is {\em{identifiable}}) with its parameter $\btheta$ with values in a parameter space $\Theta$, that is,
+\begin{align}
+\MM(\y) = \{P_\btheta(\y) | \btheta \in \Theta\},\quad \y \in \YY.
+\end{align}
+For example, a first order polynomial is a model, and a second order polynomial is another model. We can of course fit a model to the observed data, but {\em{model}} itself is an abstract concept, where the parameter values of a model need not be specified. We call a model {\em{parametric}} if $\Theta$ has finite dimension, and {\em{nonparametric}} if $\Theta$ has infinite dimension.
+
+To formulate statistical problems, we assume that $n$ observations $\y_1,\dots,\y_n$ with values in $\YY$ are observed, which are drawn i.i.d. from a measure $P_\btheta$ in the model, i.e.,
+\begin{align}
+\y_1, \dots, \y_n \sim_{iid} P_\btheta \qquad \text{for some}~~ \btheta \in \Theta
+\end{align}
+The objective of statistical {\em{inference}} is then to draw conclusions about the value of $\btheta$ (and hence about the distribution $P_\btheta$ of the data) from the observations.
+
+
+\section{Bayesian and Bayesian nonparametric models}
+In Bayesian statistics, all parameters are considered as random variables. Hence under a Bayesian model, data are generated in two stages, i.e.,
+\begin{align}
+\btheta &\sim P(\btheta)\\
+\y_1, \dots, \y_n ~|~ \btheta &\sim_{iid} P_\btheta(\y)
+\end{align}
+The objective is then to determine the {\em{posterior distribution}} -- the conditional distribution of $\btheta$ given the observed data,
+\begin{align}
+\pi(\btheta | \y_1, \dots, \y_n)
+\end{align}
+A {\em{Bayesian nonparametric}} model is a Bayesian model whose parameter space $\Theta$ has infinite dimension. To define a Bayesian nonparametric model, we have to define a prior $\pi$ on an infinite-dimensional space, which is a stochastic process with paths (i.e. realizations) in $\Theta$.
+
 
 ~
 == Top Journal in Machine Learning
