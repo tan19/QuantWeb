@@ -3482,6 +3482,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lc560-subarray-sum-equals-k-medium_1" class="md-nav__link">
+    LC560. Subarray Sum Equals K (Medium)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4348,6 +4355,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lc560-subarray-sum-equals-k-medium_1" class="md-nav__link">
+    LC560. Subarray Sum Equals K (Medium)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4431,6 +4445,13 @@
 </tr>
 <tr>
 <td><a href="LC974">LC974. Subarray Sums Divisible by K</a></td>
+<td>1D Structured FindAll</td>
+<td>No</td>
+<td>No</td>
+<td>DP</td>
+</tr>
+<tr>
+<td><a href="LC713">LC713. Subarray Product Less Than K</a></td>
 <td>1D Structured FindAll</td>
 <td>No</td>
 <td>No</td>
@@ -4633,6 +4654,66 @@
             <span class="n">preSum</span><span class="p">[</span><span class="n">s</span> <span class="o">%</span> <span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>            
 
         <span class="k">return</span> <span class="n">ans</span>                   
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="lc560-subarray-sum-equals-k-medium_1">LC560. Subarray Sum Equals K (Medium)</h3>
+<details class="note" open="open"><summary>LC713. Subarray Product Less Than K (Medium)</summary><div class="tabbed-set" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Info</label><div class="tabbed-content">
+<ul>
+<li><strong><a href="https://leetcode.com/problems/subarray-product-less-than-k/" target="_blank">LC713. Subarray Product Less Than K (Medium)</a></strong></li>
+<li>Algorithm: PreSum</li>
+<li>Time Complexity: <span class="arithmatex">\(O(n)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(1)\)</span></li>
+</ul>
+</div>
+<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Solution</label><div class="tabbed-content">
+<p>PreSum. Carefully take care of the case when <code>nums[i] == 1</code></p>
+</div>
+<input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><label for="__tabbed_9_3">PreSum <span class="arithmatex">\(O(n)\)</span></label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Python</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">numSubarrayProductLessThanK</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>                
+        <span class="n">ans</span><span class="p">,</span> <span class="n">prodList</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">:</span>
+            <span class="n">ans</span><span class="p">,</span> <span class="n">prodList</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>            
+            <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">prodList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">prodList</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>                
+                    <span class="n">prodList</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">prodList</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="n">prodList</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">k</span><span class="p">:</span>
+                        <span class="n">prodList</span> <span class="o">=</span> <span class="n">prodList</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>                    
+                        <span class="k">break</span>    
+                <span class="n">ans</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">prodList</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">:</span>
+                <span class="n">prodList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="n">ans</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">prodList</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">ans</span>                    
 </code></pre></div>
 </td></tr></table>
 </div>
