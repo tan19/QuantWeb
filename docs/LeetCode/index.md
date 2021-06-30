@@ -20,7 +20,7 @@ Common avoid repetitive computation tricks:
 - DP, calculate on-the-fly and as needed
 
 
-## Problems (21)
+## Problems (22)
 ### Binary Search (4)
 | Problem | Type | Info | Data Structure | Algorithm |
 ||||||
@@ -29,30 +29,31 @@ Common avoid repetitive computation tricks:
 | [LC704. Binary Search](LC704) | 1D Structured FindOne | No | No | Binary Search |
 | [LC34. Find First and Last Position of Element in Sorted Array](LC34) | 1D Structured FindOne | No | No | Binary Search |
 
-### Two Sum (4)
+### Two Sum (2)
 | Problem | Type | Info | Data Structure | Algorithm |
 ||||||
 | [LC1. Two Sum](LC1) | 1D Structured FindAll | Sort | No | Two Pointers |
 | [LC523. Continuous Subarray Sum](LC523) | 1D Structured FindOne | PreSum | No | No |
-| [LC560. Subarray Sum Equals K](LC560) | 1D Structured FindAll | PreSum | No | No |
-| [LC713. Subarray Product Less Than K](LC713) | 1D Structured FindAll | PreSum | No | No |
 
 ### Subarrays and Subsequences (6)
 | Problem | Type | Info | Data Structure | Algorithm |
 ||||||
 | [LC53. Maximum Subarray](LC53) | 1D Structured FindAll | No | No | DP |
 | [LC560. Subarray Sum Equals K](LC560) | 1D Structured FindAll | No | No | DP |
-| [LC523. Subarray Sums Divisible by K](LC523) | 1D Structured FindAll | No | No | DP |
 | [LC974. Subarray Sums Divisible by K](LC974) | 1D Structured FindAll | No | No | DP |
 | [LC491. Increasing Subsequences](LC491) | 1D Structured FindAll | No | No | DP |
+| [LC713. Subarray Product Less Than K](LC713) | 1D Structured FindAll | PreSum | No | No |
 | [LC1031. Maximum Sum of Two Non-Overlapping Subarrays](LC1031) | 1D Structured FindAll | No | No | DP |
 
 
-### Tree (2)
+### Tree (5)
 | Problem | Type | Info | Data Structure | Algorithm |
 ||||||
-| [LC1448. Count Good Nodes in Binary Tree](LC1448) | 2D Structured FindAll | PreSum | No | DFS |
-| [LC508. Most Frequent Subtree Sum](LC508) | 2D Structured FindAll | Dictionary | No | DFS |
+| [LC1448. Count Good Nodes in Binary Tree](LC1448) | 2D Structured FindAll | PreSum | No | Recursion |
+| [LC508. Most Frequent Subtree Sum](LC508) | 2D Structured FindAll | Dictionary | No | Recursion |
+| [LC95. Unique Binary Search Trees II](LC95) | 2D Structured FindAll | Dictionary | No | Recursion |
+| [LC654. Maximum Binary Tree](LC654) | 2D Structured FindAll | Dictionary | No | Recursion |
+| [LC1609. Even Odd Tree](LC1609) | 2D Structured FindAll | No | No | BFS |
 
 ### DFS (5)
 | Problem | Type | Preprocess | Info | Data Structure | Algorithm |
