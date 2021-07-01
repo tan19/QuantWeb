@@ -194,6 +194,24 @@ The objective is then to determine the {\em{posterior distribution}} -- the cond
 A {\em{Bayesian nonparametric}} model is a Bayesian model whose parameter space $\Theta$ has infinite dimension. To define a Bayesian nonparametric model, we have to define a prior $\pi$ on an infinite-dimensional space, which is a stochastic process with paths (i.e. realizations) in $\Theta$.
 
 
+\section{Bayesian Nonparametrics}
+The concept of functions can be generalized to that of algorithms, which describe procedures, with loops and conditional tests, of how to generate output from input.
+
+A draw from a finite dimensional Gaussian distribution is a real number, while a real-valued function can be considered as a sequence of (uncountably) infinite number of real numbers. A Gaussian Process (GP) is an infinite dimensional generalization of a Gaussian distribution. It defines a prior over real-valued functions, and a sample of it is a particular example of such functions.
+
+A draw from a finite dimensional Dirichlet distribution is a (discrete) probability measure. A Dirichlet Process (DP) is an infinite dimensional generalization of a Dirichlet distribution. It defines a prior over probability measures, and a sample of it is a probability measure.  Distributions drawn from a Dirichlet process are discrete, but cannot be described using a finite number of parameters, thus the classification as a nonparametric model.
+
+
+Note, that we do not have a measurement of the function, as in the GP case but a sample of the true probability measure; this is the main difference between GP and DP.
+
+This note is based on Peter Orbanz's BNP notes:
+\vspace*{5mm}
+\\
+\url{http://stat.columbia.edu/~porbanz/npb-tutorial.html}
+
+\subsection{Notation}
+Bold upper case letters represent matrices, e.g., $\X, \Y, \Z, \bTheta$. Bold lower case letters represent vector-valued random variables and their realizations (we do not distinguish between the two), e.g., $\x, \y, \z, \btheta$. Curly upper case letters represent spaces (i.e., possible values) of random variables, e.g., $\XX, \YY, \ZZ, \Theta$.
+
 ~
 == Top Journal in Machine Learning
 - Journal of Machine Learning Research (JMLR)
