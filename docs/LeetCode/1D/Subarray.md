@@ -6,12 +6,12 @@ It is oftentimes prohibitively costly to check **all** subarrays, which is of or
 
 NB: **Subarrays** are continuous while **subsequences** can be *broken*.
 
-## Level I. Track a Single Number
+## Level I. Track a Single Number for `DP[i-1]`
 In <a href="https://leetcode-cn.com/problems/maximum-subarray/" target="_blank">LC53. Maximum Subarray (Easy)</a>, the problem asks for the **largest subarray sum**.
 
 The trick for this type of problem is to keep **the best info**.
 
-## Level II. Track a Hash Table
+## Level II. Track a Hash Table for ``DP[i-1]``
 <span style="color:green">In the previous example, we can keep just the best piece of information because the problem imposes a </span><span style="color:red">**greedy constraint**</span><span style="color:green">, meaning the solution of the current step must come from </span><span style="color:red">**the solution of the previous step.**</span><span style="color:green">
 </span>
 
@@ -25,7 +25,7 @@ These problems are very similar if not identical, especially that all problems i
 
 The trick for this type of problem is to keep **a hash table of info**.
 
-## Level III. Track a Sorted Array
+## Level III. Track a Sorted Array for `DP[0:i]` each with a Single Number
 <span style="color:green">In the previous examples, we can track a hash table of information because the problem imposes an </span><span style="color:red">**equality constraint**</span><span style="color:green">, meaning the solution of the current step must come from </span><span style="color:red">**one of the solutions from previous steps.**</span><span style="color:green">
 </span>
 

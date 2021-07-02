@@ -20,7 +20,14 @@ Common avoid repetitive computation tricks:
 - DP, calculate on-the-fly and as needed
 
 
-## Problems (22)
+## Problems
+
+### Greedy (1)
+| Problem | Type | Info | Data Structure | Algorithm |
+||||||
+| [LC1833. Maximum Ice Cream Bars](LC1833) | 1D Structured FindAll | No | No | Greedy |
+
+
 ### Binary Search (4)
 | Problem | Type | Info | Data Structure | Algorithm |
 ||||||
@@ -46,7 +53,7 @@ Common avoid repetitive computation tricks:
 | [LC1031. Maximum Sum of Two Non-Overlapping Subarrays](LC1031) | 1D Structured FindAll | No | No | DP |
 
 
-### Tree (5)
+### Tree (6)
 | Problem | Type | Info | Data Structure | Algorithm |
 ||||||
 | [LC1448. Count Good Nodes in Binary Tree](LC1448) | 2D Structured FindAll | PreSum | No | Recursion |
@@ -54,6 +61,7 @@ Common avoid repetitive computation tricks:
 | [LC95. Unique Binary Search Trees II](LC95) | 2D Structured FindAll | Dictionary | No | Recursion |
 | [LC654. Maximum Binary Tree](LC654) | 2D Structured FindAll | Dictionary | No | Recursion |
 | [LC1609. Even Odd Tree](LC1609) | 2D Structured FindAll | No | No | BFS |
+| [LC6239. Add One Row to Tree](LC623) | 2D Structured FindAll | No | No | BFS |
 
 ### DFS (5)
 | Problem | Type | Preprocess | Info | Data Structure | Algorithm |
