@@ -3506,22 +3506,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#level-i-track-a-single-number" class="md-nav__link">
-    Level I. Track a Single Number
+  <a href="#level-i-track-a-single-number-for-dpi-1" class="md-nav__link">
+    Level I. Track a Single Number for DP[i-1]
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#level-ii-track-a-hash-table" class="md-nav__link">
-    Level II. Track a Hash Table
+  <a href="#level-ii-track-a-hash-table-for-dpi-1" class="md-nav__link">
+    Level II. Track a Hash Table for DP[i-1]
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#level-iii-track-a-sorted-array" class="md-nav__link">
-    Level III. Track a Sorted Array
+  <a href="#level-iii-track-a-sorted-array-for-dp0i-each-with-a-single-number" class="md-nav__link">
+    Level III. Track a Sorted Array for DP[0:i] each with a Single Number
   </a>
   
 </li>
@@ -4056,6 +4056,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC1833/" class="md-nav__link">
+        LC1833
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../_LeetCodeSol/LC200/" class="md-nav__link">
         LC200
       </a>
@@ -4142,6 +4154,18 @@
     <li class="md-nav__item">
       <a href="../../_LeetCodeSol/LC560/" class="md-nav__link">
         LC560
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC623/" class="md-nav__link">
+        LC623
       </a>
     </li>
   
@@ -4299,22 +4323,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#level-i-track-a-single-number" class="md-nav__link">
-    Level I. Track a Single Number
+  <a href="#level-i-track-a-single-number-for-dpi-1" class="md-nav__link">
+    Level I. Track a Single Number for DP[i-1]
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#level-ii-track-a-hash-table" class="md-nav__link">
-    Level II. Track a Hash Table
+  <a href="#level-ii-track-a-hash-table-for-dpi-1" class="md-nav__link">
+    Level II. Track a Hash Table for DP[i-1]
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#level-iii-track-a-sorted-array" class="md-nav__link">
-    Level III. Track a Sorted Array
+  <a href="#level-iii-track-a-sorted-array-for-dp0i-each-with-a-single-number" class="md-nav__link">
+    Level III. Track a Sorted Array for DP[0:i] each with a Single Number
   </a>
   
 </li>
@@ -4346,10 +4370,10 @@
 <li>the <strong>carry-on info</strong> is intentionally structured.</li>
 </ul>
 <p>NB: <strong>Subarrays</strong> are continuous while <strong>subsequences</strong> can be <em>broken</em>.</p>
-<h2 id="level-i-track-a-single-number">Level I. Track a Single Number</h2>
+<h2 id="level-i-track-a-single-number-for-dpi-1">Level I. Track a Single Number for <code>DP[i-1]</code></h2>
 <p>In <a href="https://leetcode-cn.com/problems/maximum-subarray/" target="_blank">LC53. Maximum Subarray (Easy)</a>, the problem asks for the <strong>largest subarray sum</strong>.</p>
 <p>The trick for this type of problem is to keep <strong>the best info</strong>.</p>
-<h2 id="level-ii-track-a-hash-table">Level II. Track a Hash Table</h2>
+<h2 id="level-ii-track-a-hash-table-for-dpi-1">Level II. Track a Hash Table for <code>DP[i-1]</code></h2>
 <p><span style="color:green">In the previous example, we can keep just the best piece of information because the problem imposes a </span><span style="color:red"><strong>greedy constraint</strong></span><span style="color:green">, meaning the solution of the current step must come from </span><span style="color:red"><strong>the solution of the previous step.</strong></span><span style="color:green">
 </span></p>
 <p>However, some problems have multiple solutions at each step. For example,
@@ -4359,7 +4383,7 @@
 - <a href="https://leetcode-cn.com/problems/maximum-sum-of-two-non-overlapping-subarrays/" target="_blank">LC1031. Maximum Sum of Two Non-Overlapping Subarrays (Medium)</a> asks us to find the best pair of subarrays <strong>whose lengths are pre-specified</strong>.</p>
 <p>These problems are very similar if not identical, especially that all problems impose some <strong>equality constraint</strong>. The problem is no longer <strong>what</strong> one single piece of information we should keep, but <strong>how</strong> to keep and use the full spectrum of information efficiently.</p>
 <p>The trick for this type of problem is to keep <strong>a hash table of info</strong>.</p>
-<h2 id="level-iii-track-a-sorted-array">Level III. Track a Sorted Array</h2>
+<h2 id="level-iii-track-a-sorted-array-for-dp0i-each-with-a-single-number">Level III. Track a Sorted Array for <code>DP[0:i]</code> each with a Single Number</h2>
 <p><span style="color:green">In the previous examples, we can track a hash table of information because the problem imposes an </span><span style="color:red"><strong>equality constraint</strong></span><span style="color:green">, meaning the solution of the current step must come from </span><span style="color:red"><strong>one of the solutions from previous steps.</strong></span><span style="color:green">
 </span></p>
 <p>However, as in <a href="https://leetcode-cn.com/problems/subarray-product-less-than-k/" target="_blank">LC713. Subarray Product Less Than K (Medium)</a>, where we are asked to find all subarrays whose product is <strong>less than <span class="arithmatex">\(k\)</span></strong>, and in <a href="https://leetcode-cn.com/problems/increasing-subsequences/" target="_blank">LC491. Increasing Subsequences (Medium)</a>, where we are asked to find all non-decreasing <strong>subsequences</strong>.</p>
