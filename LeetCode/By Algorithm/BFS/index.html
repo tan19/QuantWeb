@@ -18,7 +18,7 @@
     
     
       
-        <title>BFS (2) - A Stroll Through the Brambles of Quant Finance</title>
+        <title>BFS (3) - A Stroll Through the Brambles of Quant Finance</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bfs-2" class="md-skip">
+        <a href="#bfs-3" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BFS (2)
+              BFS (3)
             
           </span>
         </div>
@@ -3487,12 +3487,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          BFS (2)
+          BFS (3)
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        BFS (2)
+        BFS (3)
       </a>
       
         
@@ -3532,8 +3532,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lc1162-as-far-from-land-as-possible" class="md-nav__link">
-    LC1162. As Far from Land as Possible
+  <a href="#lc1162-as-far-from-land-as-possible-medium" class="md-nav__link">
+    LC1162. As Far from Land as Possible (Medium)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lc994-rotting-oranges-medium" class="md-nav__link">
+    LC994. Rotting Oranges (Medium)
   </a>
   
 </li>
@@ -4340,6 +4347,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC994/" class="md-nav__link">
+        LC994
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -4442,8 +4461,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lc1162-as-far-from-land-as-possible" class="md-nav__link">
-    LC1162. As Far from Land as Possible
+  <a href="#lc1162-as-far-from-land-as-possible-medium" class="md-nav__link">
+    LC1162. As Far from Land as Possible (Medium)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lc994-rotting-oranges-medium" class="md-nav__link">
+    LC994. Rotting Oranges (Medium)
   </a>
   
 </li>
@@ -4466,7 +4492,7 @@
               
                 
                 
-                <h1 id="bfs-2">BFS (2)</h1>
+                <h1 id="bfs-3">BFS (3)</h1>
 <h2 id="introduction">Introduction</h2>
 <p>BFS searches a tree or graph by level or distance. The time complexity is <span class="arithmatex">\(O(|V| + |E|)\)</span>, where <span class="arithmatex">\(|V|\)</span> is the number of vertices and <span class="arithmatex">\(|E|\)</span> the number of edges; and the space complexity is <span class="arithmatex">\(O(|V|)\)</span>. The pseudocode can be written as follows:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">When Level does not Matter</label><div class="tabbed-content">
@@ -4532,6 +4558,11 @@
 <td>As Far from Land as Possible</td>
 <td>Medium</td>
 </tr>
+<tr>
+<td>994</td>
+<td>Rotting Oranges</td>
+<td>Medium</td>
+</tr>
 </tbody>
 </table>
 <h3 id="lc542-01-matrix-medium">LC542. 01 Matrix (Medium)</h3>
@@ -4588,10 +4619,10 @@
 </div>
 </div>
 </details>
-<h3 id="lc1162-as-far-from-land-as-possible">LC1162. As Far from Land as Possible</h3>
-<details class="note" open="open"><summary>LC1162. As Far from Land as Possible</summary><div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Info</label><div class="tabbed-content">
+<h3 id="lc1162-as-far-from-land-as-possible-medium">LC1162. As Far from Land as Possible (Medium)</h3>
+<details class="note" open="open"><summary>LC1162. As Far from Land as Possible (Medium)</summary><div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Info</label><div class="tabbed-content">
 <ul>
-<li><strong><a href="https://leetcode-cn.com/problems/as-far-from-land-as-possible/" target="_blank">LC1162. As Far from Land as Possible</a></strong></li>
+<li><strong><a href="https://leetcode-cn.com/problems/as-far-from-land-as-possible/" target="_blank">LC1162. As Far from Land as Possible (Medium)</a></strong></li>
 <li>Algorithm: BFS</li>
 <li>Time Complexity: <span class="arithmatex">\(O(n)\)</span></li>
 <li>Space Complexity: <span class="arithmatex">\(O(1)\)</span></li>
@@ -4633,6 +4664,62 @@
                     <span class="n">Q</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">))</span>
 
         <span class="k">return</span> <span class="n">ans</span> <span class="k">if</span> <span class="n">ans</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="lc994-rotting-oranges-medium">LC994. Rotting Oranges (Medium)</h3>
+<details class="note" open="open"><summary>LC994. Rotting Oranges (Medium)</summary><div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Info</label><div class="tabbed-content">
+<ul>
+<li><strong><a href="https://leetcode-cn.com/problems/rotting-oranges/" target="_blank">LC994. Rotting Oranges (Medium)</a></strong></li>
+<li>Algorithm: BFS</li>
+<li>Time Complexity: <span class="arithmatex">\(O(n)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(1)\)</span></li>
+</ul>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Solution</label><div class="tabbed-content">
+<p>BFS.</p>
+</div>
+<input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">BFS <span class="arithmatex">\(O(n)\)</span></label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Python</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">orangesRotting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grid</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="n">row</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">col</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row</span><span class="p">)]</span>
+        <span class="n">Q</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">deque</span><span class="p">([(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">if</span> <span class="n">grid</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">])</span>
+        <span class="n">toVisit</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">if</span> <span class="n">grid</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">])</span>
+
+        <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">Q</span><span class="p">:</span>                   
+            <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">Q</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+            <span class="n">ans</span> <span class="o">=</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">ii</span><span class="p">,</span> <span class="n">jj</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">),</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">)]:</span>
+                <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">ii</span> <span class="o">&lt;</span> <span class="n">row</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">jj</span> <span class="o">&lt;</span> <span class="n">col</span> <span class="ow">and</span> <span class="n">dist</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">grid</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">dist</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">=</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="n">Q</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">))</span>
+                    <span class="n">toVisit</span><span class="o">.</span><span class="n">remove</span><span class="p">((</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">))</span>        
+
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">toVisit</span> <span class="k">else</span> <span class="n">ans</span>
 </code></pre></div>
 </td></tr></table>
 </div>

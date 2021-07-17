@@ -3478,7 +3478,7 @@
   
     <li class="md-nav__item">
       <a href="../BFS/" class="md-nav__link">
-        BFS (2)
+        BFS (3)
       </a>
     </li>
   
@@ -4389,6 +4389,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC994/" class="md-nav__link">
+        LC994
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -5283,60 +5295,70 @@
 </div>
 </div>
 </details>
-<p>== 基于树的DFS：需要记住递归写前序中序后序遍历二叉树的模板
-- LeetCode 543 Diameter of Binary Tree
-- LeetCode 226 Invert Binary Tree
-- LeetCode 124 Binary Tree Maximum Path Sum
-- LeetCode 236 Lowest Common Ancestor of a Binary Tree
-- LeetCode 101 Symmetric Tree
-- LeetCode 105 Construct Binary Tree from Preorder and Inorder Traversal
-- LeetCode 104 Maximum Depth of Binary Tree
-- LeetCode 951 Flip Equivalent Binary Trees
-- LeetCode 987 Vertical Order Traversal of a Binary Tree
-- LeetCode 1485 Clone Binary Tree With Random Pointer
-- LeetCode 572 Subtree of Another Tree
-- LeetCode 863 All Nodes Distance K in Binary Tree</p>
-<p>== 二叉搜索树（BST）：BST特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为O（h）复杂度，h为数的高度；注意不是所有的BST题目都需要递归，有的题目只需要while循环即可
-- LeetCode 230 Kth Smallest element in a BST
-- LeetCode 98 Validate Binary Search Tree
-- LeetCode 270 Cloest Binary Search Tree Value
-- LeetCode 235 Lowest Common Ancestor of a Binary Search Tree
-- LeetCode 669 Trim a Binary Search Tree
-- LeetCode 700 Search Range in Binary Search Tree
-- LeetCode 108 Convert Sorted Array to Binary Search Tree
-- LeetCode 333 Largest BST Subtree
-- LeetCode 510 Inorder Successor in BST II</p>
-<p>== 基于图的DFS: 和BFS一样一般需要一个set来记录访问过的节点，避免重复访问造成死循环
-- LeetCode 341 Flatten Nested List Iterator
-- LeetCode 394 Decode String
-- LeetCode 51 N-Queens
-- LeetCode 291 Word Pattern II (I为简单的Hashmap题)
-- LeetCode 126 Word Ladder II （I为BFS题目）
-- LeetCode 1110 Delete Nodes And Return Forest
-- LeetCode 93 Restore IP Addresses
-- LeetCode 22 Generate Parentheses
-- LeetCode 37 Sodoku Solver
-- LeetCode 301 Remove Invalid Parentheses
-- LeetCode 212 Word Search II （I, II）
-- LeetCode 1087 Brace Expansion
-- LeetCode 399 Evaluate Division
-- LeetCode 1274 Number of Ships in a Rectangle
-- LeetCode 1376 Time Needed to Inform All Employees
-- LeetCode 694 Number of Distinct Islands
-- LeetCode 586 Score of Parentheses</p>
-<p>== 基于排列组合的DFS: 其实与图类DFS方法一致，但是排列组合的特征更明显
-- LeetCode 17 Letter Combinations of a Phone Number
-- LeetCode 39 Combination Sum （I, II, III, IV）
-- LeetCode 90 Subsets II （重点在于如何去重）
-- LeetCode 47 Permutation II
-- LeetCode 77 Combinations
-- LeetCode 526 Beautiful Arrangement</p>
-<p>== 记忆化搜索（DFS + Memoization Search）：算是动态规划的一种，递归每次返回时同时记录下已访问过的节点特征，避免重复访问同一个节点，可以有效的把指数级别的DFS时间复杂度降为多项式级别
-- LeetCode 139 Word Break II
-- LeetCode 131 Palindrome Partitioning
-- LeetCode 72 Edit Distance
-- LeetCode 377 Combination Sum IV
-- LeetCode 1335 Minimum Difficulty of a Job Schedule</p>
+<h1 id="dfs">基于树的DFS：需要记住递归写前序中序后序遍历二叉树的模板</h1>
+<ul>
+<li>LeetCode 543 Diameter of Binary Tree</li>
+<li>LeetCode 226 Invert Binary Tree</li>
+<li>LeetCode 124 Binary Tree Maximum Path Sum</li>
+<li>LeetCode 236 Lowest Common Ancestor of a Binary Tree</li>
+<li>LeetCode 101 Symmetric Tree</li>
+<li>LeetCode 105 Construct Binary Tree from Preorder and Inorder Traversal</li>
+<li>LeetCode 104 Maximum Depth of Binary Tree</li>
+<li>LeetCode 951 Flip Equivalent Binary Trees</li>
+<li>LeetCode 987 Vertical Order Traversal of a Binary Tree</li>
+<li>LeetCode 1485 Clone Binary Tree With Random Pointer</li>
+<li>LeetCode 572 Subtree of Another Tree</li>
+<li>LeetCode 863 All Nodes Distance K in Binary Tree</li>
+</ul>
+<h1 id="bstbstohhbstwhile">二叉搜索树（BST）：BST特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为O（h）复杂度，h为数的高度；注意不是所有的BST题目都需要递归，有的题目只需要while循环即可</h1>
+<ul>
+<li>LeetCode 230 Kth Smallest element in a BST</li>
+<li>LeetCode 98 Validate Binary Search Tree</li>
+<li>LeetCode 270 Cloest Binary Search Tree Value</li>
+<li>LeetCode 235 Lowest Common Ancestor of a Binary Search Tree</li>
+<li>LeetCode 669 Trim a Binary Search Tree</li>
+<li>LeetCode 700 Search Range in Binary Search Tree</li>
+<li>LeetCode 108 Convert Sorted Array to Binary Search Tree</li>
+<li>LeetCode 333 Largest BST Subtree</li>
+<li>LeetCode 510 Inorder Successor in BST II</li>
+</ul>
+<h1 id="dfs-bfsset">基于图的DFS: 和BFS一样一般需要一个set来记录访问过的节点，避免重复访问造成死循环</h1>
+<ul>
+<li>LeetCode 341 Flatten Nested List Iterator</li>
+<li>LeetCode 394 Decode String</li>
+<li>LeetCode 51 N-Queens</li>
+<li>LeetCode 291 Word Pattern II (I为简单的Hashmap题)</li>
+<li>LeetCode 126 Word Ladder II （I为BFS题目）</li>
+<li>LeetCode 1110 Delete Nodes And Return Forest</li>
+<li>LeetCode 93 Restore IP Addresses</li>
+<li>LeetCode 22 Generate Parentheses</li>
+<li>LeetCode 37 Sodoku Solver</li>
+<li>LeetCode 301 Remove Invalid Parentheses</li>
+<li>LeetCode 212 Word Search II （I, II）</li>
+<li>LeetCode 1087 Brace Expansion</li>
+<li>LeetCode 399 Evaluate Division</li>
+<li>LeetCode 1274 Number of Ships in a Rectangle</li>
+<li>LeetCode 1376 Time Needed to Inform All Employees</li>
+<li>LeetCode 694 Number of Distinct Islands</li>
+<li>LeetCode 586 Score of Parentheses</li>
+</ul>
+<h1 id="dfs-dfs">基于排列组合的DFS: 其实与图类DFS方法一致，但是排列组合的特征更明显</h1>
+<ul>
+<li>LeetCode 17 Letter Combinations of a Phone Number</li>
+<li>LeetCode 39 Combination Sum （I, II, III, IV）</li>
+<li>LeetCode 90 Subsets II （重点在于如何去重）</li>
+<li>LeetCode 47 Permutation II</li>
+<li>LeetCode 77 Combinations</li>
+<li>LeetCode 526 Beautiful Arrangement</li>
+</ul>
+<h1 id="dfs-memoization-searchdfs">记忆化搜索（DFS + Memoization Search）：算是动态规划的一种，递归每次返回时同时记录下已访问过的节点特征，避免重复访问同一个节点，可以有效的把指数级别的DFS时间复杂度降为多项式级别</h1>
+<ul>
+<li>LeetCode 139 Word Break II</li>
+<li>LeetCode 131 Palindrome Partitioning</li>
+<li>LeetCode 72 Edit Distance</li>
+<li>LeetCode 377 Combination Sum IV</li>
+<li>LeetCode 1335 Minimum Difficulty of a Job Schedule</li>
+</ul>
                 
               
               

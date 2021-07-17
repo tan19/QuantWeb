@@ -781,6 +781,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://tan19.github.io/QuantWeb/LeetCode/_LeetCodeSol/LC994/</loc>
+         <lastmod>2021-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://tan19.github.io/QuantWeb/_About/</loc>
          <lastmod>2021-07-17</lastmod>
          <changefreq>daily</changefreq>
