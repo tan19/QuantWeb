@@ -6,7 +6,8 @@
 
 # Binary Search
 
-== 显式二分法：
+# 显式二分法：
+
 - Leetcode 34. Find First and Last Position of Element in Sorted Array
 - Leetcode 33. Search in Rotated Sorted Array
 - Leetcode 1095. Find in Mountain Array
@@ -15,7 +16,8 @@
 - Leetcode 74. Search a 2D Matrix
 - Leetcode 240. Search a 2D Matrix II
 
-== 隐式二分法：
+# 隐式二分法：
+
 - Leetcode 69. Sqrt(x)
 - Leetcode 540. Single Element in a Sorted Array
 - Leetcode 644. Maximum Average Subarray II
@@ -23,12 +25,13 @@
 - Leetcode 1300. Sum of Mutated Array Closest to Target
 - Leetcode 1060. Missing Element in Sorted Array
 
-题目分类	题目编号
-二分查找应用(简单)	374、35、278、367、69、441
-二分查找应用(中等)	34、540、275、436、300、354、658、162、4
-二分查找与旋转数组	153、154、33、81
-二分查找与矩阵	74、240
-二分答案法	378、668、410、483
+# 题目分类	题目编号
+
+- 二分查找应用(简单)	374、35、278、367、69、441
+- 二分查找应用(中等)	34、540、275、436、300、354、658、162、4
+- 二分查找与旋转数组	153、154、33、81
+- 二分查找与矩阵	74、240
+- 二分答案法	378、668、410、483
 
 
 Binary search is an algorithm that finds a target number in a **sorted** array in $O(\log n)$ time.
@@ -78,9 +81,3 @@ Binary search is an algorithm that finds a target number in a **sorted** array i
 {% include "LC1011.md" %}
 {% include "LC1642.md" %}
 {% include "LC34.md" %}
-
-
-
-
-
-        

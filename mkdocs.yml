@@ -1,5 +1,6 @@
 site_name: A Stroll Through the Brambles of Quant Finance
 site_author: emc57721
+site_url: http://tan19.github.io/QuantWeb/
 copyright: 'Copyright &copy; 2021 emc57721'  
 
 theme:

@@ -1,4 +1,4 @@
-# Subarray and Subsequence
+# Subarray and Subsequence (6)
 It is oftentimes prohibitively costly to check **all** subarrays, which is of order $O(n^2)$, not to mention all subsequences, which is of order $O(2^n)$. Thus, the common algorithm for this type of problem is to use a **structured DP** scheme, that is, 
 
 - the problem is solved **on-the-fly** in a DP fashion, and
