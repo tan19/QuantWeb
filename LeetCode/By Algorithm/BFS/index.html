@@ -18,7 +18,7 @@
     
     
       
-        <title>BFS - A Stroll Through the Brambles of Quant Finance</title>
+        <title>BFS (2) - A Stroll Through the Brambles of Quant Finance</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bfs" class="md-skip">
+        <a href="#bfs-2" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BFS
+              BFS (2)
             
           </span>
         </div>
@@ -3486,9 +3486,66 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          BFS (2)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        BFS
+        BFS (2)
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems" class="md-nav__link">
+    Problems
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lc542-01-matrix-medium" class="md-nav__link">
+    LC542. 01 Matrix (Medium)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lc1162-as-far-from-land-as-possible" class="md-nav__link">
+    LC1162. As Far from Land as Possible
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3976,6 +4033,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC1162/" class="md-nav__link">
+        LC1162
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../_LeetCodeSol/LC1254/" class="md-nav__link">
         LC1254
       </a>
@@ -4134,6 +4203,18 @@
     <li class="md-nav__item">
       <a href="../../_LeetCodeSol/LC53/" class="md-nav__link">
         LC53
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC542/" class="md-nav__link">
+        LC542
       </a>
     </li>
   
@@ -4332,6 +4413,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems" class="md-nav__link">
+    Problems
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lc542-01-matrix-medium" class="md-nav__link">
+    LC542. 01 Matrix (Medium)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lc1162-as-far-from-land-as-possible" class="md-nav__link">
+    LC1162. As Far from Land as Possible
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4343,32 +4466,210 @@
               
                 
                 
-                <h1 id="bfs">BFS</h1>
-<p>== 基础知识：
-常见的BFS用来解决什么问题？(1) 简单图（有向无向皆可）的最短路径长度（2）拓扑排序 （3） 遍历一个图（或者树）
+                <h1 id="bfs-2">BFS (2)</h1>
+<h2 id="introduction">Introduction</h2>
+<p>BFS searches a tree or graph by level or distance. The time complexity is <span class="arithmatex">\(O(|V| + |E|)\)</span>, where <span class="arithmatex">\(|V|\)</span> is the number of vertices and <span class="arithmatex">\(|E|\)</span> the number of edges; and the space complexity is <span class="arithmatex">\(O(|V|)\)</span>. The pseudocode can be written as follows:</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">When Level does not Matter</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="c1"># Pseudocode of BFS; level not matter</span>
+    <span class="k">while</span> <span class="n">queue</span><span class="p">:</span>
+        <span class="n">cur</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+        <span class="n">visited</span><span class="p">[</span><span class="n">cur</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">(</span><span class="n">cur</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">node</span> <span class="ow">is</span> <span class="n">both</span> <span class="n">valid</span> <span class="ow">and</span> <span class="n">unvisited</span><span class="p">:</span>
+                <span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">When Level Matters</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="c1"># Pseudocode of BFS; level matters</span>
+    <span class="n">level</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">queue</span><span class="p">:</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">queue</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+            <span class="n">cur</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="n">visited</span><span class="p">[</span><span class="n">cur</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">(</span><span class="n">cur</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">node</span> <span class="ow">is</span> <span class="n">both</span> <span class="n">valid</span> <span class="ow">and</span> <span class="n">unvisited</span><span class="p">:</span>
+                    <span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+    <span class="n">level</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<h2 id="problems">Problems</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Title</th>
+<th>Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>542</td>
+<td>01 Matrix</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>1162</td>
+<td>As Far from Land as Possible</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lc542-01-matrix-medium">LC542. 01 Matrix (Medium)</h3>
+<details class="note" open="open"><summary>LC542. 01 Matrix (Medium)</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Info</label><div class="tabbed-content">
+<ul>
+<li><strong><a href="https://leetcode-cn.com/problems/01-matrix/" target="_blank">LC542. 01 Matrix (Medium)</a></strong></li>
+<li>Algorithm: BFS</li>
+<li>Time Complexity: <span class="arithmatex">\(O(n)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(1)\)</span></li>
+</ul>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Solution</label><div class="tabbed-content">
+<p>BFS.</p>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">BFS <span class="arithmatex">\(O(n)\)</span></label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Python</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">updateMatrix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mat</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>                
+        <span class="n">row</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">dist</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">col</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row</span><span class="p">)]</span>
+
+        <span class="n">qq</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> <span class="k">if</span> <span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="n">Q</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">deque</span><span class="p">(</span><span class="n">qq</span><span class="p">)</span>
+
+        <span class="k">while</span> <span class="n">Q</span><span class="p">:</span>            
+            <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">Q</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">ii</span><span class="p">,</span> <span class="n">jj</span> <span class="ow">in</span> <span class="p">[[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">],</span> <span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">],</span> <span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]]:</span>
+                <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">ii</span> <span class="o">&lt;</span> <span class="n">row</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">jj</span> <span class="o">&lt;</span> <span class="n">col</span> <span class="ow">and</span> <span class="n">dist</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">mat</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">dist</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">=</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># visited</span>
+                    <span class="n">Q</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">dist</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="lc1162-as-far-from-land-as-possible">LC1162. As Far from Land as Possible</h3>
+<details class="note" open="open"><summary>LC1162. As Far from Land as Possible</summary><div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Info</label><div class="tabbed-content">
+<ul>
+<li><strong><a href="https://leetcode-cn.com/problems/as-far-from-land-as-possible/" target="_blank">LC1162. As Far from Land as Possible</a></strong></li>
+<li>Algorithm: BFS</li>
+<li>Time Complexity: <span class="arithmatex">\(O(n)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(1)\)</span></li>
+</ul>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Solution</label><div class="tabbed-content">
+<p>BFS.</p>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">BFS <span class="arithmatex">\(O(n)\)</span></label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Python</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">maxDistance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grid</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="n">r</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">c</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">r</span><span class="p">)]</span>
+        <span class="n">Q</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">deque</span><span class="p">([(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="k">if</span> <span class="n">grid</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">])</span>
+
+        <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">Q</span><span class="p">:</span>
+            <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">Q</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>            
+            <span class="n">ans</span> <span class="o">=</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">ii</span><span class="p">,</span> <span class="n">jj</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">),</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">),</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]:</span>
+                <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">ii</span> <span class="o">&lt;</span> <span class="n">r</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">jj</span> <span class="o">&lt;</span> <span class="n">c</span> <span class="ow">and</span> <span class="n">dist</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">grid</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">dist</span><span class="p">[</span><span class="n">ii</span><span class="p">][</span><span class="n">jj</span><span class="p">]</span> <span class="o">=</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>                    
+                    <span class="n">Q</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">ans</span> <span class="k">if</span> <span class="n">ans</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h1 id="_1">基础知识：</h1>
+<p>常见的BFS用来解决什么问题？(1) 简单图（有向无向皆可）的最短路径长度（2）拓扑排序 （3） 遍历一个图（或者树）
 BFS基本模板（需要记录层数或者不需要记录层数）
 多数情况下时间复杂度空间复杂度都是O（N+M），N为节点个数，M为边的个数</p>
-<p>== 基于树的BFS：不需要专门一个set来记录访问过的节点
-- Leetcode 102 Binary Tree Level Order Traversal
-- Leetcode 103 Binary Tree Zigzag Level Order Traversal
-- Leetcode 297 Serialize and Deserialize Binary Tree （很好的BFS和双指针结合的题）
-- Leetcode 374 Binary Tree Vertical Order Traversal</p>
-<p>== 基于图的BFS：（一般需要一个set来记录访问过的节点）
-- Leetcode 200. Number of Islands
-- Leetcode 133. Clone Graph
-- Leetcode 127. Word Ladder
-- Leetcode 490. The Maze
-- Leetcode 323. Connected Component in Undirected Graph
-- Leetcode 130. Surrounded Regions
-- Leetcode 752. Open the Lock
-- Leetcode 815. Bus Routes
-- Leetcode 1091. Shortest Path in Binary Matrix
-- Leetcode 542. 01 Matrix
-- Leetcode 1293. Shortest Path in a Grid with Obstacles Elimination</p>
-<p>== 拓扑排序：（https://zh.wikipedia.org/wiki/%E6%8B%93%E6%92%B2%E6%8E%92%E5%BA%8F）
-- Leetcode 207 Course Schedule （I, II）
-- Leetcode 444 Sequence Reconstruction
-- Leetcode 269 Alien Dictionary</p>
+<h1 id="bfsset">基于树的BFS：不需要专门一个set来记录访问过的节点</h1>
+<ul>
+<li>Leetcode 102 Binary Tree Level Order Traversal</li>
+<li>Leetcode 103 Binary Tree Zigzag Level Order Traversal</li>
+<li>Leetcode 297 Serialize and Deserialize Binary Tree （很好的BFS和双指针结合的题）</li>
+<li>Leetcode 374 Binary Tree Vertical Order Traversal</li>
+</ul>
+<h1 id="bfsset_1">基于图的BFS：（一般需要一个set来记录访问过的节点）</h1>
+<ul>
+<li>Leetcode 200. Number of Islands</li>
+<li>Leetcode 133. Clone Graph</li>
+<li>Leetcode 127. Word Ladder</li>
+<li>Leetcode 490. The Maze</li>
+<li>Leetcode 323. Connected Component in Undirected Graph</li>
+<li>Leetcode 130. Surrounded Regions</li>
+<li>Leetcode 752. Open the Lock</li>
+<li>Leetcode 815. Bus Routes</li>
+<li>Leetcode 1091. Shortest Path in Binary Matrix</li>
+<li>Leetcode 1293. Shortest Path in a Grid with Obstacles Elimination</li>
+</ul>
+<h1 id="_2">拓扑排序:</h1>
+<ul>
+<li>Leetcode 207 Course Schedule （I, II）</li>
+<li>Leetcode 444 Sequence Reconstruction</li>
+<li>Leetcode 269 Alien Dictionary</li>
+</ul>
                 
               
               
