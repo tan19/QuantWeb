@@ -3548,6 +3548,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Heap/" class="md-nav__link">
+        Heap (1)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Union%20Find/" class="md-nav__link">
+        Union Find (2)
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -3994,6 +4018,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC1094/" class="md-nav__link">
+        LC1094
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../_LeetCodeSol/LC1095/" class="md-nav__link">
         LC1095
       </a>
@@ -4222,6 +4258,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC547/" class="md-nav__link">
+        LC547
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../_LeetCodeSol/LC560/" class="md-nav__link">
         LC560
       </a>
@@ -4248,6 +4296,18 @@
     <li class="md-nav__item">
       <a href="../../_LeetCodeSol/LC654/" class="md-nav__link">
         LC654
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_LeetCodeSol/LC684/" class="md-nav__link">
+        LC684
       </a>
     </li>
   
@@ -4849,12 +4909,6 @@ class Solution:
 <input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><label for="__tabbed_12_2">Solution</label><div class="tabbed-content"></div>
 <input id="__tabbed_12_3" name="__tabbed_12" type="radio" /><label for="__tabbed_12_3">Binary Search <span class="arithmatex">\(O(n)\)</span></label><div class="tabbed-content">
 <div class="tabbed-set" data-tabs="13:1"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><label for="__tabbed_13_1">Python</label><div class="tabbed-content">
-<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
-class Solution:
-    def findInMountainArray(self, target: int, mountain_arr: 'MountainArray') -&gt; int:
-        L = mountain_arr.length()</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -4891,43 +4945,51 @@ class Solution:
 <span class="normal">34</span>
 <span class="normal">35</span>
 <span class="normal">36</span>
-<span class="normal">37</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    # find the peak
-    left, right = 0, L - 1
-    while left &lt;= right:
-        mid = (left + right) // 2
-        if mountain_arr.get(mid+1) - mountain_arr.get(mid) &gt; 0:
-            left = mid + 1
-        else:
-            right = mid - 1
-    peak = left
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">findInMountainArray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">mountain_arr</span><span class="p">:</span> <span class="s1">&#39;MountainArray&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="n">L</span> <span class="o">=</span> <span class="n">mountain_arr</span><span class="o">.</span><span class="n">length</span><span class="p">()</span>
 
-    # search in the left
-    left, right = 0, peak
-    while left &lt;= right:
-        mid = (left + right) // 2
-        val = mountain_arr.get(mid)
+        <span class="c1"># find the peak</span>
+        <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">L</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">:</span>
+            <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+            <span class="k">if</span> <span class="n">mountain_arr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">mountain_arr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">peak</span> <span class="o">=</span> <span class="n">left</span>
 
-        if target == val:
-            return mid
-        elif target &lt; val:
-            right = mid - 1
-        else:
-            left = mid + 1
+        <span class="c1"># search in the left</span>
+        <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">peak</span>
+        <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">:</span>
+            <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="n">mountain_arr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span>
 
-    # search in the right
-    left, right = peak, L - 1
-    while left &lt;= right:
-        mid = (left + right) // 2
-        val = mountain_arr.get(mid)
+            <span class="k">if</span> <span class="n">target</span> <span class="o">==</span> <span class="n">val</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">mid</span>
+            <span class="k">elif</span> <span class="n">target</span> <span class="o">&lt;</span> <span class="n">val</span><span class="p">:</span>
+                <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
 
-        if target == val:
-            return mid
-        elif target &lt; val:
-            left = mid + 1
-        else:
-            right = mid - 1
+        <span class="c1"># search in the right</span>
+        <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">peak</span><span class="p">,</span> <span class="n">L</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">:</span>
+            <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="n">mountain_arr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span>
 
-    return -1
+            <span class="k">if</span> <span class="n">target</span> <span class="o">==</span> <span class="n">val</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">mid</span>
+            <span class="k">elif</span> <span class="n">target</span> <span class="o">&lt;</span> <span class="n">val</span><span class="p">:</span>
+                <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
 </code></pre></div>
 </td></tr></table>
 </div>
