@@ -11,7 +11,7 @@ theme:
 
 plugins:  
   - macros:
-      include_dir: "docs/LeetCode/_LeetCodeSol"
+      include_dir: "includes/"      
 
 markdown_extensions: 
   - meta

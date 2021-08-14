@@ -1,20 +1,17 @@
 # Index
 
-Algorithm design is mainly about **how to reduce problem size and to avoid repetitive computation**. The search part of the algorithm is usually DFS (Depth First Search), through recursive function calls or stack simulation; or BFS (Breadth First Search), through for and while loops or simulated by a queue. These two are often exchangeable and are a trivial decision once the algorithm design is done.
+  
+[https://www.cs.usfca.edu/~galles/visualization/Algorithms.html]
 
-The algorithm design can be seen as to search in a **data structure**, which can be visualized as a graph, where
 
-- each node represents a state of the problem, and 
-- each edge represents available moves between nodes.
+<a href="http://visualgo.net" target="_blank">VisuAlgo</a>
 
-A problem solver carries a package full of accumulated auxiliary **info** and use the **algorithm** to search in the mist of the problem space.
+<a href="https://oi-wiki.org/" target="_blank">OI Wiki</a>
 
-Common Preprocessing Tricks
+<a href="https://www.luogu.com.cn/" target="_blank">洛谷</a>
 
-- Sort
+<a href="https://github.com/metaphysis/Code/blob/master/Programming%20Challenges%20V2021.06.01.pdf" target="_blank">程序设计竞赛进阶训练指南</a>
 
-Common avoid repetitive computation tricks:
+Algorithm design is mainly about **how to reduce problem size and to avoid repetitive computation**. 
 
-- PreSum
-- PreHash
-- DP, calculate on-the-fly and as needed
+Input ranges and sizes usually give you a hint. For example, for strings, you might want to consider using a fixed list of length 26 to represent your inputs. Another example would be, if you see the range of the possible answers is small, you may want to consider using binary search.
