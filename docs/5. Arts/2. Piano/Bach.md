@@ -1,0 +1,6 @@
+# Bach
+
+# jemdoc: menu{MENU_MUSIC}{Bach.html}
+= Bach
+
+巴赫《平均律键盘曲集》
