@@ -2,682 +2,797 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://tan19.github.io/QuantWeb/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/Compiler/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/1.%20C%2B%2B/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/1.%20Objects%20and%20Classes/1.%20Objects%20and%20Classes/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/2.%20Inheritance/2.%20Inheritance/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/5.%20Genereic%20Programming/5.%20Genereic%20Programming/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/6.%20Collections/6.%20Collections/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/7.%20Concurrency/7.%20Concurrency/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/2.%20Java/8.%20Meta%20Programming/8.%20Meta%20Programming/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/1.%20Programming%20Languages/3.%20Python/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/3.%20Software%20Engineering/4.%20Design%20Patterns/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/3.%20Software%20Engineering/5.%20System%20Design/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/4.%20Computer%20Systems/Network/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/4.%20Computer%20Systems/OS/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20Interview%20Questions/Index/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.1%20Bit/Bitset/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.2%20Set/Disjoint%20Set/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.3%20Map/Bloom%20Filter/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.3%20Map/Map/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.4%20Linked%20List%2C%20Stack%2C%20Queue%2C%20and%20Deque/Linked%20List/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.5%20Sorted%20Array/Binary%20Search/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.5%20Sorted%20Array/Monotonic%20Stack/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.5%20Sorted%20Array/Two%20Pointers/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/BST/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Binary%20Indexed%20Tree/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Heap/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Line%20Sweep/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Segment%20Tree/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Trie/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.7%20Graph/Graph/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/1.%20Data%20Structures/1.7%20Graph/Topological%20Sort/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/2.%20Algorithms/Adhoc/Adhoc/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/2.%20Algorithms/Adhoc/Presum/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/2.%20Algorithms/DP/DP/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/2.%20Algorithms/DP/Palindrome/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/2.%20Algorithms/Math/Binary%20Exponentiation/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/2.%20Algorithms/Searching/BFS/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/2.%20Algorithms/Searching/DFS/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/2.%20Algorithms/Sorting/Quicksort/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Combination%20and%20Permutation/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Missing%20Number/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Path%20Sum/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Stone%20Game/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Two%20Sum/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Array%20and%20String/Best%20Time%20to%20Buy%20and%20Sell%20Stock/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Array%20and%20String/Conversion/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Array%20and%20String/Knapsack/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Array%20and%20String/Monotonic%20Stack/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Array%20and%20String/Pattern%20Matching/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Array%20and%20String/Presum%20and%20Difference%20Array/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Array%20and%20String/Shortest%20Subarray%20with%20Sum%20at%20Least%20K/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Array%20and%20String/Subarray/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Math/Math/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/1.%20Quant%20Developer/Appendix.%20LeetCode/3.%20Classic%20Problems/Matrix%20and%20Grid/Sorted%20Matrix/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/1.%20Mathematics/Calculus/Path%20Integral/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/1.%20Mathematics/Calculus/Vector%20Calculus/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/1.%20Mathematics/Differential%20Equations/PDEs/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/1.%20Mathematics/Linear%20Algebra/LinearAlgebra/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/1.%20Mathematics/Linear%20Algebra/Matrix%20Derivatives/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Linear%20Programming/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Quadratic%20Optimization/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Uncontrained%20Optimization/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Approximate/BP/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Approximate/EM/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Approximate/EP/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Approximate/VB/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Constrained%20Linear%20Optimization/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Constrained%20Nonlinear%20Optimization/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Convex%20Optimization/Convex/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Monte%20Carlo%20Methods/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Numerical%20Integration/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Numerical%20ODE/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/2.%20Numerical%20Methods/Numerical%20PDE/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Catalan%20Number/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Covariance%20and%20Correlation/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Distributions/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Markov%20Chain/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Survival%20Analysis/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Gaussian%20Distribution/Gaussian%20Distribution/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Mathematical%20Statistics/FAQ/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Mathematical%20Statistics/Fisher%20Information/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/3.%20Statistics/Time%20Series/GARCH/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/4.%20Machine%20Learning/1.%20Regression/Regression/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/4.%20Machine%20Learning/2.%20Classification/Random%20Forest/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/4.%20Machine%20Learning/3.%20Dimension%20Reduction/Dimension%20Reduction/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/4.%20Machine%20Learning/4.%20Clustering/Clustering/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/4.%20Machine%20Learning/5.%20Time%20Series/Kalman%20Filter/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/4.%20Machine%20Learning/Causal%20Inference/Causal%20Inference/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/4.%20Machine%20Learning/Ensemble/Ensemble/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/4.%20Machine%20Learning/Kernel%20Method/Kernel/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/Appendix.%20Interview%20Questions/2.1%20Calculus/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/Appendix.%20Interview%20Questions/2.1%20Differential%20Equations/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/Appendix.%20Interview%20Questions/2.2%20Linear%20Algebra/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/Appendix.%20Interview%20Questions/2.3%20Probability/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/Appendix.%20Interview%20Questions/2.4%20Statistics%20%26%20Machine%20Learning/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/Appendix.%20Interview%20Questions/2.5%20Numerical%20Methods%20and%20Optimization/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/2.%20Quant%20Researcher/Appendix.%20Kaggle/Index/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/1.%20Economics/Inflation/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Asset%20Pricing/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Basic%20Concepts/Basic%20Concepts/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Black%20Scholes%20and%20Options/PnL/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Implied%20Volatility/Implied%20Volatility/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Implied%20Volatility/Local%20Vol/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Portfolio%20Optimization/Black-Litterman%20Allocation/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Portfolio%20Optimization/Portfolio%20Optimization/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Stochastic%20Calculus/BM/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Stochastic%20Calculus/Change%20of%20Measure/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Stochastic%20Calculus/Kolmogorov%20Equations/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/2.%20Finance/Stochastic%20Optimal%20Control%20and%20Stopping/Intro/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Hedging/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Option%20Strategies/Four%20Basics/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Option%20Strategies/Income%20Strategies/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Option%20Strategies/Leveraged%20Strategies/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Option%20Strategies/Sideways%20Strategies/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Option%20Strategies/Synthetic%20Strategies/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Option%20Strategies/Vertical%20Spreads/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Option%20Strategies/Volatility%20Strategies/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Trading%20Strategies/Algorithmic%20Trading/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/3.%20Investment%20%26%20Trading/Volatility/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Brain%20Teasers/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Brain%20Teasers/Logic%20Brainteasers/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Brain%20Teasers/Math%20Brainteasers/</loc>
+         <lastmod>2021-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Brain%20Teasers/Mental%20Math/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Interview%20Questions/BM/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Interview%20Questions/BS/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Interview%20Questions/4.2%20Trading%20Strategies/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Interview%20Questions/4.3%20Markets%20and%20Execution/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Quant%20Trader/Appendix.%20Interview%20Questions/5.1%20Portfolio%20Optimization/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/Brain%20Teasers/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/Brain%20Teasers/Logic%20Brainteasers/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/1.%20Classics/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/Brain%20Teasers/Math%20Brainteasers/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/2.%20History/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/Brain%20Teasers/Mental%20Math/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/2.%20History/%E4%B8%9C%E6%B1%89/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/Kaggle/Index/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/2.%20History/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/2.%20History/%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.1%20Bit/Bitset/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/2.%20History/%E4%BA%94%E4%BB%A3%E5%8D%81%E5%9B%BD/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.2%20Set/Disjoint%20Set/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/2.%20History/%E6%98%8E/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.3%20Map/Bloom%20Filter/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/2.%20History/%E6%B8%85/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.3%20Map/Map/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/4.%20World/3.%20Geography/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.4%20Linked%20List%2C%20Stack%2C%20Queue%2C%20and%20Deque/Linked%20List/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.5%20Sorted%20Array/Binary%20Search/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/1.%20Languages/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.5%20Sorted%20Array/Monotonic%20Stack/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/1.%20Languages/Chinese/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.5%20Sorted%20Array/Two%20Pointers/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/1.%20Languages/English/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.6%20Tree/BST/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/1.%20Languages/Japanese/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.6%20Tree/Binary%20Indexed%20Tree/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/2.%20Piano/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.6%20Tree/Heap/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/2.%20Piano/Bach/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.6%20Tree/Line%20Sweep/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/2.%20Piano/Beethoven/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.6%20Tree/Segment%20Tree/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/2.%20Piano/Chopin/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.6%20Tree/Trie/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/2.%20Piano/Mahler/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.7%20Graph/Graph/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/2.%20Piano/Mozart/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/1.%20Data%20Structures/1.7%20Graph/Topological%20Sort/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/2.%20Piano/Schubert/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/2.%20Algorithms/Adhoc/Adhoc/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/2.%20Algorithms/Adhoc/Presum/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/2.%20Algorithms/DP/DP/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/2.%20Algorithms/DP/Palindrome/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/2.%20Algorithms/Math/Binary%20Exponentiation/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/2.%20Algorithms/Searching/BFS/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/2.%20Algorithms/Searching/DFS/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/2.%20Algorithms/Sorting/Quicksort/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Combination%20and%20Permutation/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Missing%20Number/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Path%20Sum/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Stone%20Game/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Two%20Sum/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Array%20and%20String/Best%20Time%20to%20Buy%20and%20Sell%20Stock/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Array%20and%20String/Conversion/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Array%20and%20String/Knapsack/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Array%20and%20String/Monotonic%20Stack/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Array%20and%20String/Pattern%20Matching/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Array%20and%20String/Presum%20and%20Difference%20Array/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Array%20and%20String/Shortest%20Subarray%20with%20Sum%20at%20Least%20K/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Array%20and%20String/Subarray/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Math/Math/</loc>
-         <lastmod>2021-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/LeetCode/3.%20Classic%20Problems/Matrix%20and%20Grid/Sorted%20Matrix/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/5.%20Arts/3.%20Calligraphy/</loc>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/_About/</loc>
-         <lastmod>2021-08-14</lastmod>
+         <lastmod>2021-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
