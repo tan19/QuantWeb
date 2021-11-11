@@ -1,3 +1,0 @@
-# Synthetic Strategies
-
-## Long Box

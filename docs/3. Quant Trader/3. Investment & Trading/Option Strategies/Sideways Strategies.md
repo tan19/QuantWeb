@@ -1,2 +1,0 @@
-# Sideways Strategies
-

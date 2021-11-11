@@ -1,9 +1,0 @@
-# Quadratic Optimization
-{\em{Quadratic optimization problems}} (including, e.g., least-squares) form the base of the hierarchy; they can be solved exactly by solving a set of linear equations. {\em{Newton's method}} is the next level in the hierarchy. In Newton's method, solving an unconstrained or equality constrained problem is reduced to solving a sequence of quadratic problems. {\em{The interior-point methods}}, which form the top level of the hierarchy, solve an inequality constrained problem by solving a sequence of unconstrained, or equality constrained, problems. Besides Newton's method, there are quasi-Newton, conjugate-gradient, bundle, cutting-plane algorithms, and etc.
-
-Optimization problems can be broadly divided into two types: linear optimization and nonlinear optimization,  the later of which consists of unconstrained and constrained optimization problems. Obtaining necessary and sufficient conditions is one of the central problems of nonlinear optimization. The main theory is the study of Lagrange multipliers, including the Karush-Kuhn-Tucker (KKT) theorem and its extensions. However, the theory of Lagrange multipliers is far from adequate, since it does not take into account the difficulties associated with solving the equations resulting from the necessary conditions.
-
-\deff{
-	{\em{Global convergence analysis}}. The verification that a given algorithm will in fact generate a sequence that converges to a solution point.
-	{\em{Local convergence analysis}} or {\em{complexity analysis}}. The rate at which the generated sequence of points converges to the solution.
-}
