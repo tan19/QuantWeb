@@ -11,21 +11,21 @@
         <meta name="author" content="emc57721">
       
       
-        <link rel="canonical" href="http://tan19.github.io/QuantWeb/4.%20LeetCode/2.%20Algorithms%20and%20Tricks/DP/Knapsack/">
+        <link rel="canonical" href="http://tan19.github.io/QuantWeb/Daphne/">
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
     
     
       
-        <title>Knapsack - A Stroll Through the Brambles of Quant Finance</title>
+        <title>Daphne - A Stroll Through the Brambles of Quant Finance</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.1fe995fd.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1fe995fd.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
       
     
@@ -57,7 +57,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#knapsack" class="md-skip">
+        <a href="#daphne" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="A Stroll Through the Brambles of Quant Finance" class="md-header__button md-logo" aria-label="A Stroll Through the Brambles of Quant Finance" data-md-component="logo">
+    <a href=".." title="A Stroll Through the Brambles of Quant Finance" class="md-header__button md-logo" aria-label="A Stroll Through the Brambles of Quant Finance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Knapsack
+              Daphne
             
           </span>
         </div>
@@ -123,7 +123,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../.." class="md-tabs__link">
+    <a href=".." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -138,7 +138,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../1.%20C%2B%2B/" class="md-tabs__link">
+      <a href="../1.%20C%2B%2B/" class="md-tabs__link">
         1. C++
       </a>
     </li>
@@ -154,7 +154,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../2.%20Java/" class="md-tabs__link">
+      <a href="../2.%20Java/" class="md-tabs__link">
         2. Java
       </a>
     </li>
@@ -170,8 +170,24 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../3.%20Python/" class="md-tabs__link">
+      <a href="../3.%20Python/" class="md-tabs__link">
         3. Python
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../4.%20LeetCode/" class="md-tabs__link">
+        4. LeetCode
       </a>
     </li>
   
@@ -188,23 +204,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../" class="md-tabs__link md-tabs__link--active">
-        4. LeetCode
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../../Daphne/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Daphne
       </a>
     </li>
@@ -220,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../_About/" class="md-tabs__link">
+      <a href="../_About/" class="md-tabs__link">
          About
       </a>
     </li>
@@ -247,7 +247,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="A Stroll Through the Brambles of Quant Finance" class="md-nav__button md-logo" aria-label="A Stroll Through the Brambles of Quant Finance" data-md-component="logo">
+    <a href=".." title="A Stroll Through the Brambles of Quant Finance" class="md-nav__button md-logo" aria-label="A Stroll Through the Brambles of Quant Finance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -266,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Home
       </a>
     </li>
@@ -302,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1.%20C%2B%2B/" class="md-nav__link">
+      <a href="../1.%20C%2B%2B/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -344,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/" class="md-nav__link">
+      <a href="../2.%20Java/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -377,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/1.%20Objects%20and%20Classes/1.%20Objects%20and%20Classes/" class="md-nav__link">
+      <a href="../2.%20Java/1.%20Objects%20and%20Classes/1.%20Objects%20and%20Classes/" class="md-nav__link">
         Objects and Classes
       </a>
     </li>
@@ -416,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/2.%20Inheritance/2.%20Inheritance/" class="md-nav__link">
+      <a href="../2.%20Java/2.%20Inheritance/2.%20Inheritance/" class="md-nav__link">
         Objects and Classes
       </a>
     </li>
@@ -455,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/" class="md-nav__link">
+      <a href="../2.%20Java/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/" class="md-nav__link">
         Chapter 6. Interfaces, Lambda Expressions, and Inner Classes
       </a>
     </li>
@@ -494,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/" class="md-nav__link">
+      <a href="../2.%20Java/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/" class="md-nav__link">
         Chapter 6. Interfaces, Lambda Expressions, and Inner Classes
       </a>
     </li>
@@ -533,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/5.%20Genereic%20Programming/5.%20Genereic%20Programming/" class="md-nav__link">
+      <a href="../2.%20Java/5.%20Genereic%20Programming/5.%20Genereic%20Programming/" class="md-nav__link">
         Chapter 6. Interfaces, Lambda Expressions, and Inner Classes
       </a>
     </li>
@@ -572,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/6.%20Collections/6.%20Collections/" class="md-nav__link">
+      <a href="../2.%20Java/6.%20Collections/6.%20Collections/" class="md-nav__link">
         Chapter 6. Interfaces, Lambda Expressions, and Inner Classes
       </a>
     </li>
@@ -611,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/7.%20Concurrency/7.%20Concurrency/" class="md-nav__link">
+      <a href="../2.%20Java/7.%20Concurrency/7.%20Concurrency/" class="md-nav__link">
         Chapter 6. Interfaces, Lambda Expressions, and Inner Classes
       </a>
     </li>
@@ -650,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.%20Java/8.%20Meta%20Programming/8.%20Meta%20Programming/" class="md-nav__link">
+      <a href="../2.%20Java/8.%20Meta%20Programming/8.%20Meta%20Programming/" class="md-nav__link">
         Python Meta Programming
       </a>
     </li>
@@ -698,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3.%20Python/" class="md-nav__link">
+      <a href="../3.%20Python/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -717,14 +717,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       <label class="md-nav__link" for="__nav_5">
         4. LeetCode
@@ -742,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../" class="md-nav__link">
+      <a href="../4.%20LeetCode/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -817,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.1%20Bit/Bitset/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.1%20Bit/Bitset/" class="md-nav__link">
         Bitset
       </a>
     </li>
@@ -856,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.2%20Set/Disjoint_Set/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.2%20Set/Disjoint_Set/" class="md-nav__link">
         Disjoint Set (5)
       </a>
     </li>
@@ -868,7 +866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.2%20Set/Ordered_Set/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.2%20Set/Ordered_Set/" class="md-nav__link">
         Disjoint Set (5)
       </a>
     </li>
@@ -907,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.3%20Map/Bloom%20Filter/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.3%20Map/Bloom%20Filter/" class="md-nav__link">
         Bloom Filter
       </a>
     </li>
@@ -919,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.3%20Map/Map/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.3%20Map/Map/" class="md-nav__link">
         Map
       </a>
     </li>
@@ -958,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.5%20Stack%2C%20Queue%2C%20and%20Deque/Deque/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.5%20Stack%2C%20Queue%2C%20and%20Deque/Deque/" class="md-nav__link">
         Deque
       </a>
     </li>
@@ -970,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.5%20Stack%2C%20Queue%2C%20and%20Deque/Heap/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.5%20Stack%2C%20Queue%2C%20and%20Deque/Heap/" class="md-nav__link">
         Heap (1)
       </a>
     </li>
@@ -982,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.5%20Stack%2C%20Queue%2C%20and%20Deque/Monotonic%20Stack/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.%20Auxilary%20Data%20Structures/1.5%20Stack%2C%20Queue%2C%20and%20Deque/Monotonic%20Stack/" class="md-nav__link">
         Monotonic Stack (0)
       </a>
     </li>
@@ -1027,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.4%20Linked%20List%2C%20Array%2C%20String/Binary%20Search/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.4%20Linked%20List%2C%20Array%2C%20String/Binary%20Search/" class="md-nav__link">
         Binary Search (6)
       </a>
     </li>
@@ -1039,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.4%20Linked%20List%2C%20Array%2C%20String/Linked%20List/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.4%20Linked%20List%2C%20Array%2C%20String/Linked%20List/" class="md-nav__link">
         Linked List
       </a>
     </li>
@@ -1051,7 +1049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.4%20Linked%20List%2C%20Array%2C%20String/String/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.4%20Linked%20List%2C%20Array%2C%20String/String/" class="md-nav__link">
         String
       </a>
     </li>
@@ -1090,7 +1088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.6%20Tree/BST/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/BST/" class="md-nav__link">
         BST (2)
       </a>
     </li>
@@ -1102,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.6%20Tree/Binary%20Indexed%20Tree/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Binary%20Indexed%20Tree/" class="md-nav__link">
         Binary Indexed Tree
       </a>
     </li>
@@ -1114,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.6%20Tree/Line%20Sweep/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Line%20Sweep/" class="md-nav__link">
         Line Sweep
       </a>
     </li>
@@ -1126,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.6%20Tree/Segment%20Tree/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Segment%20Tree/" class="md-nav__link">
         Segment Tree
       </a>
     </li>
@@ -1138,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.6%20Tree/Trie/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.6%20Tree/Trie/" class="md-nav__link">
         Trie (2)
       </a>
     </li>
@@ -1177,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.7%20Graph/Graph/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.7%20Graph/Graph/" class="md-nav__link">
         Graph
       </a>
     </li>
@@ -1189,7 +1187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.7%20Graph/Grid/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.7%20Graph/Grid/" class="md-nav__link">
         Matrix and Grid (6)
       </a>
     </li>
@@ -1201,7 +1199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1.%20Data%20Structures/1.7%20Graph/Topological%20Sort/" class="md-nav__link">
+      <a href="../4.%20LeetCode/1.%20Data%20Structures/1.7%20Graph/Topological%20Sort/" class="md-nav__link">
         Topological Sort
       </a>
     </li>
@@ -1223,14 +1221,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
       
       <label class="md-nav__link" for="__nav_5_3">
         2. Algorithms and Tricks
@@ -1246,14 +1242,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_1" type="checkbox" id="__nav_5_3_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_1" type="checkbox" id="__nav_5_3_1" >
       
       <label class="md-nav__link" for="__nav_5_3_1">
         DP
@@ -1271,7 +1265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../DP/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/DP/DP/" class="md-nav__link">
         Dynamic Programming
       </a>
     </li>
@@ -1281,21 +1275,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/DP/Knapsack/" class="md-nav__link">
         Knapsack
       </a>
-      
     </li>
   
 
@@ -1305,7 +1289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Palindrome/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/DP/Palindrome/" class="md-nav__link">
         Palindrome
       </a>
     </li>
@@ -1317,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../State_Compression_DP/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/DP/State_Compression_DP/" class="md-nav__link">
         State Compression DP
       </a>
     </li>
@@ -1356,7 +1340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Searching/BFS/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/Searching/BFS/" class="md-nav__link">
         BFS (3)
       </a>
     </li>
@@ -1368,7 +1352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Searching/DFS/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/Searching/DFS/" class="md-nav__link">
         DFS (9)
       </a>
     </li>
@@ -1407,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Sorting/Quicksort/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/Sorting/Quicksort/" class="md-nav__link">
         Quicksort
       </a>
     </li>
@@ -1446,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tricks/Adhoc/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/Tricks/Adhoc/" class="md-nav__link">
         Adhoc (1)
       </a>
     </li>
@@ -1458,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tricks/Bit_Manipulation/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/Tricks/Bit_Manipulation/" class="md-nav__link">
         Bit Manipulation (152)
       </a>
     </li>
@@ -1470,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tricks/Presum/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/Tricks/Presum/" class="md-nav__link">
         Presum (2)
       </a>
     </li>
@@ -1482,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Tricks/Sliding_Window_Two_Pointers/" class="md-nav__link">
+      <a href="../4.%20LeetCode/2.%20Algorithms%20and%20Tricks/Tricks/Sliding_Window_Two_Pointers/" class="md-nav__link">
         Sliding Window and Two Pointers （252）
       </a>
     </li>
@@ -1527,7 +1511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../3.%20Math/Binary%20Exponentiation/" class="md-nav__link">
+      <a href="../4.%20LeetCode/3.%20Math/Binary%20Exponentiation/" class="md-nav__link">
         Binary Exponentiation
       </a>
     </li>
@@ -1539,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../3.%20Math/Josephus_Problem/" class="md-nav__link">
+      <a href="../4.%20LeetCode/3.%20Math/Josephus_Problem/" class="md-nav__link">
         Josephus Problem
       </a>
     </li>
@@ -1578,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Arrangement/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Arrangement/" class="md-nav__link">
         Arrangement
       </a>
     </li>
@@ -1590,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Combination%20and%20Permutation/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Combination%20and%20Permutation/" class="md-nav__link">
         Combination and Permutation (14)
       </a>
     </li>
@@ -1602,7 +1586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Lecture%200/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Lecture%200/" class="md-nav__link">
         Lecture 1. Bit (17)
       </a>
     </li>
@@ -1614,7 +1598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Lecture%201/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Lecture%201/" class="md-nav__link">
         Lecture 2. Linked List (14)
       </a>
     </li>
@@ -1626,7 +1610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Lecture%202/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Lecture%202/" class="md-nav__link">
         Lecture 3. Tree (62)
       </a>
     </li>
@@ -1638,7 +1622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Lecture%203/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Lecture%203/" class="md-nav__link">
         Lecture 3. String (50)
       </a>
     </li>
@@ -1650,7 +1634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Lecture%204/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Lecture%204/" class="md-nav__link">
         Lecture 4. Array (81)
       </a>
     </li>
@@ -1662,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Lecture%205/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Lecture%205/" class="md-nav__link">
         Lecture 5. Grid (15)
       </a>
     </li>
@@ -1674,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Lecture%206/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Lecture%206/" class="md-nav__link">
         Lecture 6. Graph (5)
       </a>
     </li>
@@ -1686,7 +1670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Lecture%207/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Lecture%207/" class="md-nav__link">
         Lecture 7. Math (22)
       </a>
     </li>
@@ -1698,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Missing%20Number/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Missing%20Number/" class="md-nav__link">
         Missing Number (8)
       </a>
     </li>
@@ -1710,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Path%20Sum/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Path%20Sum/" class="md-nav__link">
         Path Sum (3)
       </a>
     </li>
@@ -1722,7 +1706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Range%20Query/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Range%20Query/" class="md-nav__link">
         Range Query
       </a>
     </li>
@@ -1734,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Stone%20Game/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Stone%20Game/" class="md-nav__link">
         Stone Game (8)
       </a>
     </li>
@@ -1746,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Top250/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Top250/" class="md-nav__link">
         Top 300
       </a>
     </li>
@@ -1758,7 +1742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Two%20Sum/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Two%20Sum/" class="md-nav__link">
         Two Sum (7)
       </a>
     </li>
@@ -1791,7 +1775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Array%20and%20String/Best%20Time%20to%20Buy%20and%20Sell%20Stock/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Array%20and%20String/Best%20Time%20to%20Buy%20and%20Sell%20Stock/" class="md-nav__link">
         Best Time to Buy and Sell Stock (5)
       </a>
     </li>
@@ -1803,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Array%20and%20String/Conversion/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Array%20and%20String/Conversion/" class="md-nav__link">
         Conversion
       </a>
     </li>
@@ -1815,7 +1799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Array%20and%20String/Knapsack/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Array%20and%20String/Knapsack/" class="md-nav__link">
         Knapsack (7)
       </a>
     </li>
@@ -1827,7 +1811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Array%20and%20String/Pattern%20Matching/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Array%20and%20String/Pattern%20Matching/" class="md-nav__link">
         Pattern Matching
       </a>
     </li>
@@ -1839,7 +1823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Array%20and%20String/Presum%20and%20Difference%20Array/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Array%20and%20String/Presum%20and%20Difference%20Array/" class="md-nav__link">
         Presum and Difference Array
       </a>
     </li>
@@ -1851,7 +1835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Array%20and%20String/Shortest%20Subarray%20with%20Sum%20at%20Least%20K/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Array%20and%20String/Shortest%20Subarray%20with%20Sum%20at%20Least%20K/" class="md-nav__link">
         Shortest Subarray with Sum at Least K
       </a>
     </li>
@@ -1863,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Problems/Array%20and%20String/Subarray/" class="md-nav__link">
+      <a href="../4.%20LeetCode/4.%20Problems/Array%20and%20String/Subarray/" class="md-nav__link">
         Subarray and Subsequence (6)
       </a>
     </li>
@@ -1894,12 +1878,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       <label class="md-nav__link" for="__nav_6">
         Daphne
@@ -1915,11 +1901,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../../Daphne/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Daphne
       </a>
+      
     </li>
   
 
@@ -1959,7 +1955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../_About/" class="md-nav__link">
+      <a href="../_About/" class="md-nav__link">
         Markdown Examples
       </a>
     </li>
@@ -2002,7 +1998,7 @@
               
                 
                 
-                <h1 id="knapsack">Knapsack</h1>
+                <h1 id="daphne">Daphne</h1>
                 
               
               
@@ -2027,7 +2023,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../DP/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dynamic Programming" rel="prev">
+        <a href="../4.%20LeetCode/4.%20Problems/Array%20and%20String/Subarray/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Subarray and Subsequence (6)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2036,20 +2032,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Dynamic Programming
+              Subarray and Subsequence (6)
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Palindrome/" class="md-footer__link md-footer__link--next" aria-label="Next: Palindrome" rel="next">
+        <a href="../_About/" class="md-footer__link md-footer__link--next" aria-label="Next: Markdown Examples" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Palindrome
+              Markdown Examples
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -2082,18 +2078,18 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>
       
-        <script src="../../../../javascripts/config.js"></script>
+        <script src="../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="../../../../javascripts/tables.js"></script>
+        <script src="../javascripts/tables.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
