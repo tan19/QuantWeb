@@ -1,0 +1,10 @@
+??? Note "FAQ1. Compare Procedural vs OOP"
+    === "Question"
+        Compare procedual and OOP.
+
+    === "Answer"
+        Procedual programming has two distinct features: 1) `data` and `operations` are seperated; 2) only two types of data `local` and `global`.
+
+        The drawback of the first is that it is not a good approximation of the real world. For the second, global data design makes it **everything is related to everything else**, which is overly complex and hard to maintain and extend.
+
+    === "Comment"

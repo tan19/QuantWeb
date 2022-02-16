@@ -1,0 +1,19 @@
+??? Note "FAQ2. Discuss C++ Memory Areas"
+    === "Question"
+        Discuss C++ memory areas.
+
+    === "Answer"
+        There are five distinct memory areas in C++:
+        
+        - **Const Data:** The const data area stores string literals and other data whose values are known at compile-time. Do not assume the memory layout of this area, because compilers may optimize it, e.g, two overlap strings.
+        
+        - **Stack:** The stack stores automatic/local variables.
+        
+        - **Free Store:** The free store is used by `new/delete`.
+        
+        - **Heap:** The heap is used by `malloc/free`.
+        
+        - **Global/Static:** Global or static variables and objects have their storage allocated at program startup, but may not be initialized until after the program has begun executing.
+
+    === "Comment"
+        This is `Item 35` from `Exceptional C++`.
