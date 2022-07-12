@@ -1,6 +1,5 @@
 There are seven special class functions.
 
-
 === "C++ Class Functions"
 ``` C++
 class X {

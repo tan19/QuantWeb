@@ -1,0 +1,3 @@
+# Empty Class
+
+It is often useful to have a class with no data members for use in inheritance hierarchies. A base class may only have several `typedef`s that are used in multiple classes. For example, the `std::iterator` class template just has the standard types defined so that you don't need to define them in each iterator class. An interface class typically has no data members, only virtual member functions. A virtual table has nothing to do with the data members of a class.
