@@ -3,6 +3,7 @@ hide:
     - navigation
     - toc
 ---
+
 This website serves as the companion of the book "A Stroll Through the Brambles of Quantitative Finance".
 # Markdown Examples
 

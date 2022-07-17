@@ -11,6 +11,7 @@ theme:
 
 plugins:
   - search
+  - mkdocs-jupyter
   - macros:
       include_dir: "includes/"
 
@@ -20,7 +21,8 @@ markdown_extensions:
   - def_list  
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.inlinehilite
   - pymdownx.highlight:
       linenums: true # add line numbers to code

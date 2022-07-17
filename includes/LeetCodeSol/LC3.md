@@ -6,8 +6,8 @@
         - Space Complexity: $O(1)$
 
     === "Solution"
-        DP or Two Pointers.
-    === "DP $O(n)$"
+        Two Pointers.
+    === "Two Pointers $O(n)$"
         === "Python"
             ``` Python
             from collections import defaultdict
@@ -26,9 +26,4 @@
                         ans = max(ans, longestDist)
 
                     return ans           
-            ```
-    === "Two Pointers $O(n)$"
-        === "Python"
-            ``` Python
-                     
-            ```
+            ```    
