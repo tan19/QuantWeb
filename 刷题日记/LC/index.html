@@ -2336,8 +2336,7 @@
 
 
 <h1 id="leetcode">LeetCode</h1>
-<h1 id="_1">双指针技巧秒杀七道链表题目</h1>
-<h2 id="_2">合并两个有序链表</h2>
+<p><a href="https://labuladong.github.io/algo/" target="_blank">labuladong</a></p>
 <details class="note">
 <summary>LC21. Merge Two Sorted Lists (Easy)</summary>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Info</label><label for="__tabbed_1_2">Solution</label><label for="__tabbed_1_3">Two Pointers <span class="arithmatex">\(O(n)\)</span></label></div>
@@ -2408,7 +2407,7 @@
 </div>
 </div>
 </details>
-<details class="note" open="open">
+<details class="note">
 <summary>LC86. Partition List (Medium)</summary>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Info</label><label for="__tabbed_3_2">Solution</label><label for="__tabbed_3_3">Adhoc <span class="arithmatex">\(O(n)\)</span></label></div>
 <div class="tabbed-content">
@@ -2468,7 +2467,6 @@
 </div>
 </div>
 </details>
-<h1 id="more">More</h1>
 <details class="note">
 <summary>LC152. Maximum Product Subarray (Medium)</summary>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Info</label><label for="__tabbed_5_2">Solution</label><label for="__tabbed_5_3">Main Method O(n)</label></div>
@@ -2509,6 +2507,116 @@
             <span class="n">ans</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">max_prod</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">ans</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="note">
+<summary>LC198. House Robber (Medium)</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Info</label><label for="__tabbed_7_2">Solution</label><label for="__tabbed_7_3">DP <span class="arithmatex">\(O(n)\)</span></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong><a href="https://leetcode.cn/problems/house-robber/" target="_blank">LC198. House Robber (Medium)</a></strong></li>
+<li>Algorithm: DP</li>
+<li>Time Complexity: <span class="arithmatex">\(O(n)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(1)\)</span></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>DP.</p>
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Python</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">rob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">max_include</span><span class="p">,</span> <span class="n">max_exclude</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+            <span class="n">max_include</span><span class="p">,</span> <span class="n">max_exclude</span> <span class="o">=</span> <span class="n">max_exclude</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_include</span><span class="p">,</span> <span class="n">max_exclude</span><span class="p">)</span>
+            <span class="n">ans</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">max_include</span><span class="p">,</span> <span class="n">max_exclude</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">ans</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="note">
+<summary>LC239. Sliding Window Maximum (Medium)</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Info</label><label for="__tabbed_9_2">Solution</label><label for="__tabbed_9_3">Double-ended Queue + Monotonic Stack <span class="arithmatex">\(O(n)\)</span></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong><a href="https://leetcode.cn/problems/sliding-window-maximum/" target="_blank">LC239. Sliding Window Maximum (Medium)</a></strong></li>
+<li>Algorithm: Double-ended Queue + Monotonic Stack</li>
+<li>Time Complexity: <span class="arithmatex">\(O(n)\)</span></li>
+<li>Space Complexity: <span class="arithmatex">\(O(n)\)</span></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Double-ended Queue + Monotonic Stack</p>
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Python</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">maxSlidingWindow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="n">dq</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+            <span class="c1"># remove the first element if &quot;out of window&quot;            </span>
+            <span class="k">if</span> <span class="n">dq</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">-</span> <span class="n">dq</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">k</span><span class="p">:</span>
+                <span class="n">dq</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+            <span class="c1"># remove the end elements if smaller than the current number</span>
+            <span class="k">while</span> <span class="n">dq</span> <span class="ow">and</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">nums</span><span class="p">[</span><span class="n">dq</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]:</span>
+                <span class="n">dq</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="n">dq</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">dq</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+
+        <span class="k">return</span> <span class="n">ans</span>            
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
