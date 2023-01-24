@@ -166,11 +166,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/CPython/</loc>
-         <lastmod>2023-01-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/Class/</loc>
          <lastmod>2023-01-24</lastmod>
          <changefreq>daily</changefreq>
@@ -182,6 +177,21 @@
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/Metaprogramming/</loc>
+         <lastmod>2023-01-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/CPython/</loc>
+         <lastmod>2023-01-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/CPython/run_time_object/</loc>
+         <lastmod>2023-01-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/CPython/run_time_state/</loc>
          <lastmod>2023-01-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
