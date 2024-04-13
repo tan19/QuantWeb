@@ -1,14 +1,5 @@
 # Index
 
-??? Done "What are pyi files?" 
-    === "Question"
-        In Python, what are `pyi` files?
-    
-    === "Answer"
-        The `i` stands for `interface`, and `pyi` files are stub interface files: each Python module is represented by a `.pyi` stub, but all the methods are empty.
-
-
-
 ??? Done "Bound, Unbound, and Static Methods in Python" 
     === "Question"
         In Python, what are bound, unbound, and static methods?

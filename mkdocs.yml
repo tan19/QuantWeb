@@ -1,7 +1,7 @@
 site_name: A Stroll Through the Brambles of Quantitative Finance - the Companion Website
-site_author: emc57721
+site_author: tan19
 site_url: http://tan19.github.io/QuantWeb/
-copyright: 'Copyright &copy; 2021 emc57721'  
+copyright: 'Copyright &copy; 2021 tan19'  
 
 theme:
   name: material
@@ -12,6 +12,7 @@ theme:
 plugins:
   - search
   - mkdocs-jupyter
+  - autorefs
   - macros:
       include_dir: "includes/"
 
@@ -40,3 +41,5 @@ extra_javascript:
 
   - javascripts/tables.js
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+
+extra_css: [specific.css]
