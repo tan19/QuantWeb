@@ -2,397 +2,437 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://tan19.github.io/QuantWeb/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/1.%20Optimization/Newton%27s%20Method/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/A.Trading/intro/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/2.%20Machine%20Learning/notebook/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/B.Research/intro/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/2.%20Machine%20Learning/Kaggle/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/B.Research/1.%20Optimization/Newton%27s%20Method/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/FAQ/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/B.Research/2.%20Machine%20Learning/notebook/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/0.%20FAQ/CPP/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/B.Research/2.%20Machine%20Learning/Kaggle/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/0.%20FAQ/Python/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/C.Dev/intro/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/0.%20FAQ/classes/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/intro/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/FAQ/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/0.%20Basics/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/0.%20FAQ/CPP/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/1.%20Preprocessing/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/0.%20FAQ/Python/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/2.%20Pointers/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/0.%20FAQ/classes/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/Iterators/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/constructor/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/0.%20Basics/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/destructor/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/1.%20Preprocessing/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/linkage/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/2.%20Pointers/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/scope/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/Iterators/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/Class/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/constructor/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/Class/assignment_operator/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/destructor/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/Class/constructor/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/linkage/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/Class/destructor/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/scope/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/1.%20C%2B%2B/Class/empty_class/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/Class/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/Class/assignment_operator/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/JNI/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/Class/constructor/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/1.%20Objects%20and%20Classes/1.%20Objects%20and%20Classes/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/Class/destructor/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/2.%20Inheritance/2.%20Inheritance/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/1.%20C%2B%2B/Class/empty_class/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/JNI/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/5.%20Genereic%20Programming/5.%20Genereic%20Programming/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/1.%20Objects%20and%20Classes/1.%20Objects%20and%20Classes/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/6.%20Collections/6.%20Collections/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/2.%20Inheritance/2.%20Inheritance/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/7.%20Concurrency/7.%20Concurrency/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/3.%20Interfaces%2C%20Lambda%20Expressions%2C%20and%20Inner%20Classes/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/2.%20Java/8.%20Meta%20Programming/8.%20Meta%20Programming/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/4.%20Exceptions%2C%20Assertions%2C%20and%20Logging/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/5.%20Genereic%20Programming/5.%20Genereic%20Programming/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/Class/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/6.%20Collections/6.%20Collections/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/Iterable/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/7.%20Concurrency/7.%20Concurrency/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/Metaprogramming/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/2.%20Java/8.%20Meta%20Programming/8.%20Meta%20Programming/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/CPython/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/CPython/run_time_object/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/Class/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/3.%20Python/CPython/run_time_state/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/Iterable/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/Compiler/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/Metaprogramming/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/Compiler/1.%20Compiler/compiler/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/CPython/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/Compiler/2.%20Assembler/symbol_table/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/CPython/compiler/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/Compiler/3.%20Linker/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/CPython/eval/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/3.%20Programming%20Languages/Compiler/4.%20Loader/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/CPython/run_time_object/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/3.%20Python/CPython/run_time_state/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/1.%20Data_Structure/1.%20Set_Hash/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/Compiler/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/1.%20Data_Structure/2.%20Linked_List_Array/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/Compiler/1.%20Compiler/compiler/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/1.%20Data_Structure/3.%20Tree/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/Compiler/2.%20Assembler/symbol_table/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/1.%20Data_Structure/4.%20Graph/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/Compiler/3.%20Linker/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/BFS/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/3.%20Programming%20Languages/Compiler/4.%20Loader/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/Binary%20Search/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/Bloom%20Filter/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/1.%20Data_Structure/1.%20Set_Hash/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/DFS/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/1.%20Data_Structure/2.%20Linked_List_Array/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/DP/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/1.%20Data_Structure/3.%20Tree/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/Greedy/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/1.%20Data_Structure/4.%20Graph/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/Line%20Sweep/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/BFS/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/Sort/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/Binary%20Search/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/Sweep_Line/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/Bloom%20Filter/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/2.%20Algorithm/Tricks/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/DFS/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Arrangement/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/DP/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Best%20Time%20to%20Buy%20and%20Sell%20Stock/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/Greedy/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Bit/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/Line%20Sweep/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Combination%20and%20Permutation/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/Sort/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Conversion/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/Sweep_Line/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Grid/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/2.%20Algorithm/Tricks/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Josephus_Problem/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Arrangement/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Missing%20Number/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Best%20Time%20to%20Buy%20and%20Sell%20Stock/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Palindrome/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Bit/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Path%20Sum/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Combination%20and%20Permutation/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Range%20Query/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Conversion/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Shortest%20Subarray%20with%20Sum%20at%20Least%20K/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Grid/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Stone%20Game/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Josephus_Problem/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/String/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Missing%20Number/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Sub_String/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Palindrome/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Subarray/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Path%20Sum/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tan19.github.io/QuantWeb/4.%20Algorithms/3.%20Problems/Two%20Sum/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Range%20Query/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Shortest%20Subarray%20with%20Sum%20at%20Least%20K/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Stone%20Game/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/String/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Sub_String/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Subarray/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/4.%20Algorithms/3.%20Problems/Two%20Sum/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/5.%20Computer%20System/Network/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/5.%20Computer%20System/Newton%27s%20Method/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0/</loc>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://tan19.github.io/QuantWeb/D.Tech/%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0/LC/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://tan19.github.io/QuantWeb/_About/</loc>
-         <lastmod>2023-01-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0/</loc>
-         <lastmod>2023-01-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://tan19.github.io/QuantWeb/%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0/LC/</loc>
-         <lastmod>2023-01-24</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
